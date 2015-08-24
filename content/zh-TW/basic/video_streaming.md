@@ -18,6 +18,7 @@
 > mjpg_streamer -i "input_uvc.so -d /dev/video0 -r 640x480 -f 25" -o "output_http.so -p 8080 -w /www/webcam" &
 ```
 * 在您的 browser 中打開 `http://mylinkit.local:8080/stream.html` 有看到 video 影像即是正常
+
 ### 步驟
 
 
