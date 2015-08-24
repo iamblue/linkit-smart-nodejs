@@ -33,7 +33,7 @@
     > npm install linkit-smart-gpio --save
     ```
     
-* 產生一個 app.js 
+* 產生一個 app.js 檔案
     ``` bash 
     > vim app.js
     ```
