@@ -9,11 +9,11 @@
 * 把 microSD 插進 Linkit smart 中
 * ssh 進去你的 Linkit smart
 * 產生一個名為 app 的 forlder
-    ``` sh
+    ``` bash
         > mkdir app
     ```
 * 產生 app.js 
-    ``` sh
+    ``` bash
         > vim app.js
     ```
 * 在 app.js 內容中按下 i 鍵後寫：
