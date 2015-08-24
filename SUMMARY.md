@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
 
-
 ## Getting start
 
 * [打開檔案(openfile.md)](da_kai_dang_684828_openfile__md.md)
