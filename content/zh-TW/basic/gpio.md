@@ -37,7 +37,7 @@
     ``` bash 
     > vim app.js
     ```
-* 內文編輯
+* 編輯 app.js 內文
     ``` js
     var gpio = require('linkit-smart-gpio');
     gpio.register(8, 'output'); // 8 means P8
