@@ -19,7 +19,7 @@
 * 在 app.js 內容中按下 i 鍵後寫：
     ``` js
         var fs = require('fs');
-        fs.readFile('/tmp/mounts', function (err, data)         {
+        fs.readdir('/Media/SD-P1', function (err, data)         {
             if (err) throw err;
             console.log(data);
         });
