@@ -1,6 +1,7 @@
 # Linkit smart - Nodejs
 
-* [Introduction](/content/zh-TW/README.md)
+* [介紹](/content/zh-TW/README.md)
+    * [linkit smart 規格](/content/zh-TW/README.md) 
 
 * [基礎](/content/zh-TW/basic/README.md)
     * [打開檔案](/content/zh-TW/basic/open_file.md)
