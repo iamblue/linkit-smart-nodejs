@@ -20,7 +20,7 @@
     ``` js
         var fs = require('fs');
         // 注意一下，下面的 SD-P1 代表的意思是，讀取 SD 卡的第一個磁碟分割
-        fs.readdir('/Media/SD-P1', function (err, data)         {
+        fs.readdir('/Media/SD-P1', function (err, data) {
             if (err) throw err;
             console.log(data);
         });
