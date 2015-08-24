@@ -6,8 +6,6 @@
 
 ### 步驟
 
-* 把 microSD 插進 Linkit smart 中
-* ssh 進去你的 Linkit smart
 * 產生一個名為 app 的 forlder
     ``` bash
         > mkdir app
