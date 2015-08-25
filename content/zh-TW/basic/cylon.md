@@ -10,6 +10,7 @@
     ``` bash
         > mkdir app
     ```
+
 * 產生 app.js 
     ``` bash
         > vim app.js
