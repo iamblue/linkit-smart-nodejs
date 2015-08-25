@@ -1,24 +1,13 @@
-## 使用 linkit-smart-gpio 套件來操控 GPIO 
+## 使用 mraa 套件來操控 GPIO 
 
 ### 說明
 
-這個章節我們來透過 Nodejs 來操控GPIO 。
+這個章節我們來透過 mraa 來操控GPIO 。
 
-### 須先準備
-
-#### 控制 LED 須準備
-* LED x 1
-* 電阻 x 1
-* 杜邦線數條
-
-#### 監聽按鈕須準備
-* 按鈕 x 1
-* 電阻 x 1
 
 ## 控制 LED (輸出 GPIO 訊息)
 
 ### 步驟
-* 將 LED 接上 P8
 * ssh 進去 Linkit smart
 * 產生一個專案
     ``` bash
@@ -48,6 +37,8 @@
     setTimeout(function(){ gpio.high(8) }, 3000);
     ```
 * 就可以看到成果囉!
+
+
 
 
 ## 監聽按鈕是否按下 (接收 GPIO 訊息) 
