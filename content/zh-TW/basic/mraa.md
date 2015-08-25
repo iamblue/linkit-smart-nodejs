@@ -38,12 +38,7 @@
     ```
 * 就可以看到成果囉!
 
-
-
-
-## 監聽按鈕是否按下 (接收 GPIO 訊息) 
-### 步驟
-    
+![](http://iamblue.gitbooks.io/linkit-smart-nodejs/content/images/blink.gif)
 
         
 
