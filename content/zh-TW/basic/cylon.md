@@ -2,7 +2,7 @@
 
 ### 說明
 
-這個章節我們來透過 nodejs 上最著名的開源專案 cylon.js 來控制 LED
+這個章節我們來透過 nodejs 上最著名的開源專案 cylon.js 來控制 LED 。
 
 ### 步驟
 
