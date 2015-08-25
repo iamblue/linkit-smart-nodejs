@@ -38,7 +38,7 @@
     ```
 * 就可以看到成果囉!
 
-![](http://iamblue.gitbooks.io/linkit-smart-nodejs/content/images/blink.gif)
+![demo](http://iamblue.gitbooks.io/linkit-smart-nodejs/content/images/blink.gif)
 
         
 
