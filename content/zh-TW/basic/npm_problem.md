@@ -1,4 +1,4 @@
-##在 linkit smart 上安裝 Nodejs 套件
+## 在 linkit smart 上安裝 Nodejs 套件
 
 ### 說明
 
