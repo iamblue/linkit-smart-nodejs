@@ -8,8 +8,16 @@
 
 ### 步驟
 
-* 請先至您的 Web console UI (初始網址是 http://mylinkit.local )
-* 產生一個名為 app 的 forlder
+* 請先打開瀏覽器至您的 Web console UI (初始網址是 http://mylinkit.local )
+* 確定版子有跟您所指定的 ap 連線
+* ssh 進去您的版子
+* 進去您的 Nodejs 專案資料夾下
+* 比如說我今天想安裝 express 套件，請下：
+    ```
+        npm install express
+    ```
+* 看到這樣的畫面就是大功告成囉!
+
 
 ### 遇到問題列表
 #### Q. npm install 過久或者是連線逾時
