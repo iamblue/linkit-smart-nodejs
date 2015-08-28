@@ -21,9 +21,10 @@
 * 看到這樣的畫面就是大功告成囉!
 
 Ps. 若您的套件要安裝在 global 的 Nodejs 環境中，請下：
-    ``` 
-        npm install express -g
-    ```
+``` 
+    npm install express -g
+```
+
 ### 遇到問題列表
 
 #### Q. npm install 過久或者是連線逾時
