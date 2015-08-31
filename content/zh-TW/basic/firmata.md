@@ -34,10 +34,17 @@
     
 * 安裝 firmata
 
-    不建議使用：
+    注意！因為 npm 安裝 firmata 套件要做一些 compile ，會造成l 7688 Duo 執行過久，因此不建議使用 npm install 方式。
+    
+    我們先在本機端，你的電腦先產生一個 folder
+    
     ```
-        > npm install firmata --save
+        mkdir testfirmata && cd testfirmata
     ```
+    
+    
+    
+    
     
 
     
