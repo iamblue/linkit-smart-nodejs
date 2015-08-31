@@ -109,17 +109,15 @@
             console.log('Listening on port 8080 ...');
         });
     ```
-* 在 app.js 內容中按下 i 鍵後寫：
-    ``` js
-        console.log('Hello world');
+* 執行 app.js  
+    ``` 
+        node app
         
     ```
-* 按下 ESC 鍵，再輸入 wq! 完成儲存後離開
-* 輸入 node app.js 即可看到成果:
-    ``` bash
-        > Hello world
-    ```
+* 打開你的 browser :
 
+    * 127.0.0.1:8080?value=high 為打開 led
+    * 127.0.0.1:8080?value=low 為關掉 led
     
 
         
