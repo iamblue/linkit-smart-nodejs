@@ -2,7 +2,13 @@
 
 ### 說明
 
-這個章節我們來透過 nodejs 上最著名的開源專案 cylon.js 來控制 LED 。
+#### 注意 : 本章節適用於 l 7688 Duo 版子， l 7688 不可以用哦!
+
+l 7688 上面有兩顆晶片，一顆是跑得動 linux 的 MPU (7688)，另外一顆為 Arduino MCU，對於 Nodejs 的開發者而言，我們會希望能夠在 MPU 上跑我們的nodejs app，透過這個 app 能夠直接控制 Arduino 。
+
+這個章節我們來透過 Nodejs 的 firmata 套件讓 mpu 跟 mcu 兩邊能夠溝通。
+
+
 
 ### 須先準備
 
