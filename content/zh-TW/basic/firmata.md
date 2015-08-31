@@ -26,27 +26,50 @@
     ``` bash
         > mkdir app && cd app
     ```
-
-* 產生 app.js 
-    ``` bash
-        > vim app.js
-    ```
     
 * 安裝 firmata
 
-    注意！因為 npm 安裝 firmata 套件要做一些 compile ，會造成l 7688 Duo 執行過久，因此不建議使用 npm install 方式。
+    注意！因為 npm 安裝 firmata 套件要做一些 compile ，會造成l 7688 Duo 執行過久，因此不建議在l 7688 Duo版子上使用 `npm install` 方式。
     
-    我們先在本機端，你的電腦先產生一個 folder
+    因此我們先在本機端（你的電腦）先產生一個 testfirmata folder
     
     ```
         mkdir testfirmata && cd testfirmata
     ```
     
+    接下來執行： 
+    ```
+        npm init 
+    ```
     
+    安裝firmata：
     
+    ```
+        npm install firmata --save
+    ```
     
+    進去你的 node_modules folder：
+    ```
+        cd node_modules
+    ```
     
-
+    壓縮 firmata folder：
+    ```
+        tar -cvf ./firmata.tar ./firmata
+    ```
+    
+    把壓縮好的檔案傳進你的 l 7688 Duo 版子
+    ```
+        scp ./firmata.tar root@mylinkit.local:/root/app/node_modules/
+    ```
+    (如果出現 can't find node_modules folder 的字眼，請回到你的版子的 /app folder 產生一個 node_modules 的 folder : `mkdir node_modules`)
+    
+* 回到你的版子的終端機
+* 產生一個 app.js 檔案：
+    
+    ```
+        vim app.js
+    ```
     
 * 在 app.js 內容中按下 i 鍵後寫：
     ``` js
