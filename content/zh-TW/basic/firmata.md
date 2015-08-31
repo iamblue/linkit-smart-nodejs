@@ -33,9 +33,13 @@
     ```
     
 * 安裝 firmata
+
+    不建議使用：
     ```
         > npm install firmata --save
     ```
+    
+
     
 * 在 app.js 內容中按下 i 鍵後寫：
     ``` js
