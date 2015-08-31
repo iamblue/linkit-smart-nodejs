@@ -50,16 +50,19 @@
     ```
     
     進去你的 node_modules folder：
+    
     ```
         cd node_modules
     ```
     
     壓縮 firmata folder：
+    
     ```
         tar -cvf ./firmata.tar ./firmata
     ```
     
     把壓縮好的檔案傳進你的 l 7688 Duo 版子
+    
     ```
         scp ./firmata.tar root@mylinkit.local:/root/app/node_modules/
     ```
