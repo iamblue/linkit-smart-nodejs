@@ -48,8 +48,8 @@
     var updatedImage = '';
 
     paparazzo.on('update', function(image) {
-        updatedImage = image
-        #console.log "Downloaded #{image.length} bytes"
+        updatedImage = image;
+        //console.log "Downloaded #{image.length} bytes"
     })
     
     //paparazzo.on('error', function(error){
