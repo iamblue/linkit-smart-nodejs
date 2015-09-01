@@ -30,12 +30,14 @@
     
 * 安裝 cylon, cylon-firmata, cylon-gpio, cylon-i2c:
     
-    * 由於以上套件跟安裝 firmata 一樣會遇到 npm install 
-    ```
-        > npm install firmata --save
-    ```
+    * 由於以上套件跟安裝 firmata 一樣，要做一些 compile 的動作，這會造成l 7688 Duo 執行過久，因此我們建議使用當初裝 firmata 的方式一樣安裝以上四個套件。
     
-* 在 app.js 內容中按下 i 鍵後寫：
+    
+* 以上四個套件都確認安裝在 /node_modules folder 下後，在根目錄(/app)下新增 app.js ：
+    ```
+        vim app.js
+    ```
+* 按下 i 鍵後撰寫寫：
     ``` js
         console.log('Hello world');
         
