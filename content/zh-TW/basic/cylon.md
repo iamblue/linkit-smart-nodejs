@@ -52,14 +52,11 @@
             },
 
             devices: {
-                led: { driver: 'led', pin: 13 },
-                button: { driver: 'button', pin: 2 }
+                led: { driver: 'led', pin: 13 }
             },
 
             work: function(my) {
-                my.button.on('push', function() {
-                    my.led.toggle()
-                });
+                every((1).second(), my.led.toggle);
             }
         }).start();
         
