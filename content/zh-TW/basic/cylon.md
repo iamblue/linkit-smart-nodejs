@@ -39,7 +39,24 @@
     ```
 * 按下 i 鍵後撰寫寫：
     ``` js
-        console.log('Hello world');
+        var Cylon = require('cylon');
+
+        Cylon.robot({
+            connections: {
+                arduino: { adaptor: 'firmata', port: '/dev/ttyS0' }
+            },
+
+            devices: {
+                led: { driver: 'led', pin: 13 },
+                button: { driver: 'button', pin: 2 }
+            },
+
+            work: function(my) {
+                my.button.on('push', function() {
+                    my.led.toggle()
+                });
+            }
+        }).start();
         
     ```
 * 按下 ESC 鍵，再輸入 wq! 完成儲存後離開
