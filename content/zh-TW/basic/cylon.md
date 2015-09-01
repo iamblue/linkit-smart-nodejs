@@ -38,7 +38,7 @@
     * 詳細章節請參考 firmata 章節。
     
     
-* 以上四個套件都確認安裝在 /node_modules folder 下後，在根目錄(/app)下新增 app.js ：
+* 以上四個套件都確認安裝在 /node_modules folder 下後，在根目錄 (/app) 下新增 app.js ：
     ```
         vim app.js
     ```
