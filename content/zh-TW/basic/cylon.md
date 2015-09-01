@@ -28,9 +28,10 @@
         > vim app.js
     ```
     
-* 安裝 cylon, cylon-firmata, cylon-gpio, cylon-i2c:
+* 安裝 `cylon`, `cylon-firmata`, `cylon-gpio`, `cylon-i2c` 套件:
     
     * 由於以上套件跟安裝 firmata 一樣，要做一些 compile 的動作，這會造成l 7688 Duo 執行過久，因此我們建議使用當初裝 firmata 的方式一樣安裝以上四個套件。
+    * 詳細章節請參考 firmata 章節。
     
     
 * 以上四個套件都確認安裝在 /node_modules folder 下後，在根目錄(/app)下新增 app.js ：
@@ -61,10 +62,9 @@
     ```
 * 按下 ESC 鍵，再輸入 wq! 完成儲存後離開
 * 輸入 node app.js 即可看到成果:
-    ``` bash
-        > Hello world
-    ```
 
+
+* 完成!
     
 
         
