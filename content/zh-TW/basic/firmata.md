@@ -21,7 +21,14 @@
 
 ### 步驟
 
-* 先將
+#### MCU 端
+* 打開你的 Arduino IDE 
+* copy 這網址的內容: https://gist.github.com/edgarsilva/e73c15a019396d6aaef2 
+* 燒錄進去 Arduino  
+
+#### MPU 端
+
+* ssh 進去你的 7688
 
 * 產生一個名為 app 的 forlder
     ``` bash
@@ -30,7 +37,7 @@
     
 * 安裝 firmata
 
-    注意！因為 npm 安裝 firmata 套件要做一些 compile ，會造成l 7688 Duo 執行過久，因此不建議在l 7688 Duo版子上使用 `npm install` 方式。
+    注意！因為 npm 安裝 firmata 套件要做一些 compile 的動作，這會造成l 7688 Duo 執行過久，因此不建議在l 7688 Duo版子上使用 `npm install` 方式安裝 firmata 套件。
     
     因此我們先在本機端（你的電腦）先產生一個 testfirmata folder
     
