@@ -2,7 +2,7 @@
 
 ### 說明
 
-這個章節我們來透過 nodejs 來創建第一隻 Hello world 程式
+這個章節我們來透過 Nodejs 來創建第一隻 `Hello world` 程式。
 
 ### 步驟
 
@@ -14,7 +14,7 @@
     ``` bash
         > vim app.js
     ```
-* 在 app.js 內容中按下 i 鍵後寫：
+* 在 app.js 內容中按下 i 鍵後撰寫：
     ``` js
         console.log('Hello world');
         
@@ -24,7 +24,7 @@
     ``` bash
         > Hello world
     ```
-
+* 完成!
     
 
         
