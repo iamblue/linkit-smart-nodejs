@@ -17,10 +17,6 @@
     ``` bash
     > npm init
     ```
-* 安裝 linkit-smart-gpio 套件
-    ``` bash
-    > npm install linkit-smart-gpio --save
-    ```
     
 * 產生一個 app.js 檔案
     ``` bash 
