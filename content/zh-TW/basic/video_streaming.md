@@ -52,9 +52,9 @@
         //console.log "Downloaded #{image.length} bytes"
     })
     
-    //paparazzo.on('error', function(error){
-    //    console.log(error);
-    //})
+    paparazzo.on('error', function(error){
+        console.log(error);
+    })
     
     paparazzo.start();
 
