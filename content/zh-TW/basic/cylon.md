@@ -1,4 +1,4 @@
-## 使用 cylon.js 來控制 LED
+## 使用 Cylon.js 來控制 LED
 
 ### 說明
 
