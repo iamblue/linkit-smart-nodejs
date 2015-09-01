@@ -28,7 +28,9 @@
         > vim app.js
     ```
     
-* 安裝 firmata
+* 安裝 cylon, cylon-firmata, cylon-gpio, cylon-i2c:
+    
+    * 由於以上套件跟安裝 firmata 一樣會遇到 npm install 
     ```
         > npm install firmata --save
     ```
