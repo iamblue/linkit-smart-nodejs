@@ -2,7 +2,10 @@
 
 * [介紹](/content/zh-TW/README.md)
     * [l 規格](/content/zh-TW/README.md) 
-    * [新手教學](touch-sensor.md) 
+    * [如何設定網路?](touch-sensor.md)
+    * [如何 ssh 進 l 7688 ](touch-sensor.md) 
+    * [如何 Reset l 7688](touch-sensor.md)
+    * [如何更新新的firmware?](touch-sensor.md)
 * [基礎](/content/zh-TW/basic/README.md)
     * [在 l 上 run 第一隻 Hello world 程式](/content/zh-TW/basic/helloworld.md)
     * [在 l 上安裝 Nodejs 套件](/content/zh-TW/basic/npm.md)
@@ -15,5 +18,6 @@
     * [如何自動一開機時啟動您的 Nodejs App ? ](/content/zh-TW/basic/linux_auto_start.md)
 * [輕易結合雲端服務(MCS)](/content/zh-TW/example/README.md)
     * [使用 MCSjs 用雲端操控](touch-sensor.md) 
+* [Web of things系列]()
 * [經典範例](/content/zh-TW/example/README.md)
     * [使用 touch sensor 觸發 LED](touch-sensor.md)    
