@@ -57,19 +57,18 @@
         npm install firmata --save
     ```
     
-    進去你的 node_modules folder：
-    
+    因為 firmata 內部引用的一個套件(node-serialport) 在電腦上安裝時會產生你電腦規格的 compile 檔，但是這個套件的mips compile檔已經安裝在我們的l 7688 Duo上面，所以我們必須執行把這套件刪除的動作:
     ```
-        cd node_modules
+        rm -rf ./node_modules/firmata/node_modules/serialport/
     ```
     
     壓縮 firmata folder：
     
     ```
-        tar -cvf ./firmata.tar ./firmata
+        tar -cvf ./firmata.tar ./node_modules/firmata
     ```
     
-    把壓縮好的檔案傳進你的 l 7688 Duo 版子
+    將壓縮好的檔案傳進你的 l 7688 Duo 版子
     
     ```
         scp ./firmata.tar root@mylinkit.local:/root/app/node_modules/
