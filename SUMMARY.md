@@ -13,10 +13,7 @@
     * [使用 firmata 來控制 LED ](/content/zh-TW/basic/firmata.md)
     * [使用 cylon.js 來控制 LED ](/content/zh-TW/basic/cylon.md)
     * [如何自動一開機時啟動您的 Nodejs App ? ](/content/zh-TW/basic/linux_auto_start.md)
-
-
 * [輕易結合雲端服務(MCS)](/content/zh-TW/example/README.md)
     * [使用 MCSjs 用雲端操控](touch-sensor.md) 
-    
 * [經典範例](/content/zh-TW/example/README.md)
     * [使用 touch sensor 觸發 LED](touch-sensor.md)    
