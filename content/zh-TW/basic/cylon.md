@@ -20,14 +20,21 @@
 
 ### 步驟
 
-* 先將
+#### MCU 端
+* 打開你的 Arduino IDE 
+* copy 這網址的內容: https://gist.github.com/edgarsilva/e73c15a019396d6aaef2 
+* 燒錄進去 Arduino  
 
-* 產生一個名為 app 的 forlder
+#### MPU 端
+
+* ssh 進去 l 7688
+
+* 產生一個名為 app 的 forlder :
     ``` bash
         > mkdir app && cd app
     ```
 
-* 產生 app.js 
+* 產生 app.js :
     ``` bash
         > vim app.js
     ```
