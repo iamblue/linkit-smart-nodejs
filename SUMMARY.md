@@ -2,7 +2,7 @@
 
 * [介紹](/content/zh-TW/README.md)
     * [l 規格](/content/zh-TW/README.md) 
-
+    * [新手教學](touch-sensor.md) 
 * [基礎](/content/zh-TW/basic/README.md)
     * [在 l 上 run 第一隻 Hello world 程式](/content/zh-TW/basic/helloworld.md)
     * [在 l 上安裝 Nodejs 套件](/content/zh-TW/basic/npm.md)
