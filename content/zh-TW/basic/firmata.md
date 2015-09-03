@@ -120,6 +120,12 @@
             console.log('Listening on port 8080 ...');
         });
     ```
+    
+* 去 `/etc/inittab` 編輯相關內容:
+    ```
+        vim /etc/inittab
+    ```
+    把 ttyS0::askfirst:/bin/ash --login 前面加一個 # 註解掉
 * 執行 app.js  
     ``` 
         node app
