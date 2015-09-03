@@ -21,8 +21,8 @@
             console.log('board.firmware: ', board.firmware);   
             board.pinMode(ledPin, board.MODES.OUTPUT);
             var myApp = mcs.register({
-                deviceId: 'DLTeF0km',
-                deviceKey: 'UfnOy2m7yWw3aTGG',
+                deviceId: 'Input your deviceId',
+                deviceKey: 'Input your deviceKey',
             });
             myApp.on('LED_control', function(time, data) {
                 console.log('blink');
