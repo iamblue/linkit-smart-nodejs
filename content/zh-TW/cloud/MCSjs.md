@@ -1,4 +1,4 @@
-## 使用 MCSjs 雲端操控 l 7688
+## 使用 MCS + firmata 控制 LED
 
 ### 前言
 
