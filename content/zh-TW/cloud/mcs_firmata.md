@@ -17,7 +17,8 @@
                 console.log(err);                          
                 board.reset();                             
                 return;                         
-            }                                                                              console.log('connected...');                                                   console.log('board.firmware: ', board.firmware);   
+            }                                                          console.log('connected...');
+            console.log('board.firmware: ', board.firmware);   
             board.pinMode(ledPin, board.MODES.OUTPUT);
             var myApp = mcs.register({
                 deviceId: 'DLTeF0km',
@@ -27,9 +28,9 @@
                 console.log('blink');
                 console.log(data);
                 if(data === '1'){
-                    board.digitalWrite(ledPin, board.HIGH);                 } else {                                                                           board.digitalWrite(ledPin, board.LOW);
+                    board.digitalWrite(ledPin, board.HIGH);                 } else {                                                       board.digitalWrite(ledPin, board.LOW);
                 }
-            });                                                                        });   
+            });                                                    });   
     ```
 * 存檔成功後執行 node app
 * 這時候回到 MCS 畫面，按下這個 data channel 的 switch按鈕。 
