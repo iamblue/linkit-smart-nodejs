@@ -18,12 +18,12 @@
     vim /etc/rc.local
 ```
 
-* 參考這內容把 `/etc/rc.local` 編輯你想要執行的 app 路徑:
+* 參考這內容把 `/etc/rc.local` 編輯程你想要執行的 app 路徑:
 
 ```
 #!/bin/sh -e
 
-node /root/mcs/firmata.js
+node /root/app/app.js
 
 exit 0
 ```
