@@ -8,4 +8,6 @@
 * 你的 awesome Nodejs App
 
 ### 流程
+* 確定跟你的版子已連線
+* ssh 進去
 * 
