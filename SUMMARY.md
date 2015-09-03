@@ -2,6 +2,7 @@
 
 * [介紹](/content/zh-TW/README.md)
     * [l 規格](/content/zh-TW/README.md) 
+    * [開箱設定](/)
     * [如何設定網路?](touch-sensor.md)
     * [如何 ssh 進 l 7688 ](touch-sensor.md) 
     * [如何 Reset l 7688](touch-sensor.md)
