@@ -9,7 +9,6 @@
 
 ### 步驟
 
-
 ### MCU 端
 
 * 打開你的 Arduino IDE 
