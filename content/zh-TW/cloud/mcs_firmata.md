@@ -15,7 +15,6 @@
 * copy 這網址的內容: https://gist.github.com/edgarsilva/e73c15a019396d6aaef2 
 * 燒錄進去 Arduino  
 
-
 ### MPU 端
 * 確認 l 7688 是否已經連接
 * ssh 進去
