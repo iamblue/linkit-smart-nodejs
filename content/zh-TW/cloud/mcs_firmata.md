@@ -2,7 +2,7 @@
 
 ### 前言
 
-請先使用完畢 [之前的章節](/content/zh-TW/cloud/MCSjs.md)
+請先閱讀完畢 [之前的章節](/content/zh-TW/cloud/MCSjs.md)
 
 ### 電路圖
 
@@ -11,6 +11,11 @@
 
 
 ### MCU 端
+
+* 打開你的 Arduino IDE 
+* copy 這網址的內容: https://gist.github.com/edgarsilva/e73c15a019396d6aaef2 
+* 燒錄進去 Arduino  
+
 
 ### MPU 端
 
