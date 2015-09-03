@@ -6,8 +6,31 @@
 
 ### 步驟
 
-* 編輯之前章節的 app.js:
-    
+* 編輯之前章節的 app.js( 把原來的內容清空 )
+* :
+    ```
+        var ledPin = 13;         
+        var firmata = require('firmata');     
+        var mcs = require('mcsjs');                
+        var board = new firmata.Board("/dev/ttyS0", function(err) {                                                                                             
+            if (err) {                             
+                console.log(err);                          
+                board.reset();                             
+                return;                         
+            }                                                                              console.log('connected...');                                                   console.log('board.firmware: ', board.firmware);   
+            board.pinMode(ledPin, board.MODES.OUTPUT);
+            var myApp = mcs.register({
+                deviceId: 'DLTeF0km',
+                deviceKey: 'UfnOy2m7yWw3aTGG',
+            });                                                        
+            myApp.on('GPIO_00', function(time, data) {
+                console.log('blink');
+                console.log(data);
+                if(data === '1'){
+                    board.digitalWrite(ledPin, board.HIGH);                 } else {                                                                           board.digitalWrite(ledPin, board.LOW);
+                }
+            });                                                                        });   
+    ```
 * 存檔成功後執行 node app
 * 這時候回到 MCS 畫面，按下這個 data channel 的 switch按鈕。 
     ![](螢幕快照 2015-09-03 下午3.01.14.png)
