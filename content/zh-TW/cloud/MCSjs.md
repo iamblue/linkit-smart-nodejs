@@ -1,4 +1,4 @@
-## 使用 MCS + firmata 控制 LED
+## 使用 MCSjs 透過 MCS 來操控
 
 ### 前言
 
