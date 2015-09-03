@@ -2,9 +2,7 @@
 
 ### 前言
 
-請先看 [這個教學](https://mcs.mediatek.com/resources/latest/tutorial/getting_started) 在 MCS 中 create 好一個內容只有一個 on/off (control type) 且 data channel ID 名為 LED_control 的 data channel 的 test device。
-
-注意: 在 MCS 中 create 出 test device 後，會在該 device detail page 的畫面的右上方得到 deivceId 跟 deviceKey 即為下面步驟的 deviceId 跟 deviceKey。
+請先使用完畢 [之前的章節](/content/zh-TW/cloud/MCSjs.md)
 
 ### 步驟
 
