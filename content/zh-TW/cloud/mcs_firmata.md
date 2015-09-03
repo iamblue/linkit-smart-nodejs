@@ -2,10 +2,11 @@
 
 ### 前言
 
-請先閱讀完畢 [之前的章節](/content/zh-TW/cloud/MCSjs.md)
+請先閱讀完畢 [之前的章節](/content/zh-TW/cloud/MCSjs.md)。
 
 ### 電路圖
 
+LED 的火線請接 D13
 
 ### 步驟
 
