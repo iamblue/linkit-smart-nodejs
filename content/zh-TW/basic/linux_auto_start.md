@@ -5,9 +5,25 @@
 這個章節我們來透過 linux 的基本指令讓 l 7688 開機時自動啟動開發者的 Nodejs App.
 
 ### 須先準備
+
 * 你的 awesome Nodejs App
 
 ### 流程
+
 * 確定跟你的版子已連線
 * ssh 進去
-* 
+* 編輯 /etc/rc.local:
+
+```
+    vim /etc/rc.local
+```
+
+* 參考這內容編輯你想要執行的app路徑:
+
+```
+#!/bin/sh -e
+
+node /root/mcs/firmata.js
+
+exit 0
+```
