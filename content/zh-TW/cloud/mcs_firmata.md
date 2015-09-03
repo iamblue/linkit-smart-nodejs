@@ -24,7 +24,7 @@
                 deviceId: 'DLTeF0km',
                 deviceKey: 'UfnOy2m7yWw3aTGG',
             });
-            myApp.on('GPIO_00', function(time, data) {
+            myApp.on('LED_control', function(time, data) {
                 console.log('blink');
                 console.log(data);
                 if(Number(data) === 1){
