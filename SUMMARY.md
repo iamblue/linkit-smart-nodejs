@@ -18,6 +18,7 @@
     * [如何自動一開機時啟動您的 Nodejs App ? ](/content/zh-TW/basic/linux_auto_start.md)
 * [輕易結合雲端服務(MCS)](/content/zh-TW/cloud/README.md)
     * [使用 MCSjs 用雲端操控](/content/zh-TW/cloud/MCSjs.md) 
+    * [使用 MCS + firmata 控制 LED ](/content/zh-TW/cloud/MCSjs.md) 
 * [Web of things](/content/zh-TW/wot/README.md)
 * [經典範例](/content/zh-TW/example/README.md)
     * [使用 touch sensor 觸發 LED](/content/zh-TW/example/touch_sensor.md)    
