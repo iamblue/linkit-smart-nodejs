@@ -18,7 +18,7 @@
     vim /etc/rc.local
 ```
 
-* 參考這內容編輯你想要執行的app路徑:
+* 參考這內容把 `/etc/rc.local` 編輯你想要執行的 app 路徑:
 
 ```
 #!/bin/sh -e
