@@ -20,7 +20,7 @@ LED 的火線請接 D13。
 ### MPU 端
 * 確認 l 7688 是否已經連接
 * ssh 進去
-* 編輯之前章節的 app.js ( 把原來的內容清空 ):
+* 編輯之前章節的 app.js ( 把原來的內容清空 )
     ```js
         var ledPin = 13;         
         var firmata = require('firmata');     
