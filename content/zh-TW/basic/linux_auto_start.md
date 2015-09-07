@@ -34,3 +34,4 @@ exit 0
 chown 777 /etc/rc.local
 
 ```
+* 重新開機後就可以看到結果囉！
