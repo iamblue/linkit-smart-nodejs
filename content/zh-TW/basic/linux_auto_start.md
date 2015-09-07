@@ -27,3 +27,10 @@ node /root/app/app.js
 
 exit 0
 ```
+
+* 存檔後，設定 `/etc/rc.local` 權限:
+
+```
+chown 777 /etc/rc.local
+
+```
