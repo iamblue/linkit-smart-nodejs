@@ -23,5 +23,4 @@
 * [Web of things](content/zh-TW/wot/README.md)
 * [經典範例](content/zh-TW/example/README.md)
    * [使用 touch sensor 觸發 LED](content/zh-TW/example/touch_sensor.md)
-* aaa
 
