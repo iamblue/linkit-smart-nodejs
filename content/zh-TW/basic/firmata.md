@@ -89,7 +89,7 @@
         var ledPin = 13;
         var firmata = require('firmata');
 
-        var board = new firmata.Board("/dev/ttyATH0", function(err) {
+        var board = new firmata.Board("/dev/ttyS0", function(err) {
             if (err) {
                 console.log(err);
                 board.reset();
@@ -106,11 +106,14 @@
 
             http.createServer(function(request, response) {
                 var params = url.parse(request.url, true).query;
-
-                if (params.value.toLowerCase() == 'high') {
-                    board.digitalWrite(ledPin, board.HIGH);
-                } else {
-                    board.digitalWrite(ledPin, board.LOW);
+                try {
+                    if (params.value.toLowerCase() == 'high') {
+                        board.digitalWrite(ledPin, board.HIGH);
+                    } else if (params.value.toLowerCase() == 'low'){
+                        board.digitalWrite(ledPin, board.LOW);
+                    }
+                } catch(e) {
+                
                 }
                 response.writeHead(200);
                 response.write("The value written was: " + params.value);
@@ -121,11 +124,11 @@
         });
     ```
     
-* 去 `/etc/inittab` 編輯相關內容:
+* 把 yunbridge 關閉:
     ```
-        vim /etc/inittab
+        uci set yunbridge.config.disabled=0
     ```
-    把 ttyS0::askfirst:/bin/ash --login 前面加一個 # 註解掉
+* 重新啟動 l 7688 Duo
 * 執行 app.js  
     ``` 
         node app
