@@ -35,9 +35,8 @@
         myApp.on('LED_control', function(time, data) {
             if(Number(data) === 1){                     
                 console.log('blink');
-                board.digitalWrite(ledPin, board.HIGH);
             } else {
-                board.digitalWrite(ledPin, board.LOW);
+                console.log('off');
             }
         }); 
     ```
