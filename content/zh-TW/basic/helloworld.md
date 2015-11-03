@@ -1,4 +1,4 @@
-##在 linkit smart 上 run 第一隻 Hello wolrd 程式
+##在 linkit smart 7688 上 run 第一隻 Hello wolrd 程式
 
 ### 說明
 
