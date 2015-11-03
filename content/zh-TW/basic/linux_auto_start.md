@@ -1,8 +1,8 @@
-## 如何讓 l 7688 開機時自動啟動您的 Nodejs App ?
+## 如何讓 linkit smart 7688 開機時自動啟動您的 Nodejs App ?
 
 ### 說明
 
-這個章節我們來透過 linux 的基本指令讓 l 7688 開機時自動啟動開發者的 Nodejs App.
+這個章節我們來透過 linux 的基本指令讓 linkit smart 7688 開機時自動啟動開發者的 Nodejs App.
 
 ### 須先準備
 
