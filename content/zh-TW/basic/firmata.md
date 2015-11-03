@@ -2,9 +2,9 @@
 
 ### 說明
 
-#### 注意 : 本章節適用於 l 7688 Duo 版子， l 7688 不可以用哦!
+#### 注意 : 本章節適用於 linkit smart 7688 Duo 版子， linkit smart 7688 不可以用哦!
 
-前言：l 7688 上面有兩顆晶片，一顆是跑得動 linux 的 MPU ( 7688 )，另外一顆為 Arduino MCU，對於 Nodejs 開發者而言，我們會希望能夠在 MPU 上跑我們的 Nodejs app，透過這個 app 能夠直接控制 Arduino MCU。因此這個章節我們來透過 Nodejs 的 firmata 套件讓 MPU 跟 Arduino MCU 兩邊能夠溝通。
+前言：linkit smart 7688 上面有兩顆晶片，一顆是跑得動 linux 的 MPU ( 7688 )，另外一顆為 Arduino MCU，對於 Nodejs 開發者而言，我們會希望能夠在 MPU 上跑我們的 Nodejs app，透過這個 app 能夠直接控制 Arduino MCU。因此這個章節我們來透過 Nodejs 的 firmata 套件讓 MPU 跟 Arduino MCU 兩邊能夠溝通。
 
 
 ### 須先準備
@@ -68,7 +68,7 @@
         tar -cvf ./firmata.tar ./node_modules/firmata
     ```
     
-    將壓縮好的檔案傳進你的 l 7688 Duo 版子
+    將壓縮好的檔案傳進你的 linkit smart 7688 Duo 版子
     
     ```
         scp ./firmata.tar root@mylinkit.local:/root/app/node_modules/
@@ -128,7 +128,7 @@
     ```
         uci set yunbridge.config.disabled=0
     ```
-* 重新啟動 l 7688 Duo
+* 重新啟動 linkit smart 7688 Duo
 * 執行 app.js  
     ``` 
         node app
