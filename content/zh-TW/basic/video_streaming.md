@@ -2,14 +2,14 @@
 
 ### 說明
 
-這個章節我們來透過 Nodejs 來創建 video streaming 。
+這個章節我們來透過 mjpg-streamer 來創建 video streaming 。
 
 ### 須先準備
 * webcam: 建議使用 uvc 規格，本 example 拿 logitech C310 camera 來做基本範例。
 
 
 ### 安裝
-* 確定 linkit smart 已安裝 mjpg_streamer
+* 確定 linkit smart 7688 已安裝 mjpg-streamer
 
 ### 原理
 * 基本上有安裝完成 mjpg-streamer 即可 work
