@@ -27,7 +27,7 @@
 
 #### MPU 端
 
-* ssh 進去 l 7688
+* ssh 進去 linkit smart 7688
 
 * 產生一個名為 app 的 forlder :
     ``` bash
