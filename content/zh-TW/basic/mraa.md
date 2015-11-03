@@ -9,7 +9,7 @@
 ## 控制 LED (輸出 GPIO 訊息)
 
 ### 步驟
-* ssh 進去 Linkit smart
+* ssh 進去 Linkit smart 7688
 * 產生一個專案
 
     ``` bash
