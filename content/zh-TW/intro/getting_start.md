@@ -26,15 +26,15 @@
 
 [點我閱讀](/)
 
-### 如何還原 l 7688 至原廠預設值?
+### 如何還原 linkit smart 7688 至原廠預設值?
 
 [點我閱讀](/)
 
-### 如何 ssh 進 l 7688?
+### 如何 ssh 進 linkit smart 7688?
 
 [點我閱讀](/)
 
-### 如何燒錄Arduino code 進去 l 7688 Duo?
+### 如何燒錄Arduino code 進去 linkit smart 7688 Duo?
 
 [點我閱讀](/)
 
