@@ -26,7 +26,7 @@ LED 的火線請接 D13。
         var ledPin = 13;         
         var firmata = require('firmata');     
         var mcs = require('mcsjs');                
-        var board = new firmata.Board("/dev/ttyS0", function(err) {                                                                                             
+        var board = new firmata.Board("/dev/ttyS0", function(err) {
             if (err) {                             
                 console.log(err);                          
                 board.reset();                             
