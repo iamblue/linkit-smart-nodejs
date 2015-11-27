@@ -31,7 +31,8 @@ LED 的火線請接 D13。
                 console.log(err);                          
                 board.reset();                             
                 return;                         
-            }                                                          console.log('connected...');
+            }
+            console.log('connected...');
             console.log('board.firmware: ', board.firmware);   
             board.pinMode(ledPin, board.MODES.OUTPUT);
             var myApp = mcs.register({
