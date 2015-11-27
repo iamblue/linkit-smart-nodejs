@@ -25,7 +25,7 @@
 * 輸入:
     ```
         var mcs = require('mcsjs');
-
+        
         var myApp = mcs.register({
             deviceId: 'Input your deviceId',
             deviceKey: 'Input your deviceKey',
