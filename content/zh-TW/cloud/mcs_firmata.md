@@ -39,7 +39,7 @@ LED 的火線請接 D13。
                 deviceId: 'Input your deviceId',
                 deviceKey: 'Input your deviceKey',
             });
-            myApp.on('LED_control', function(time, data) {
+            myApp.on('LED_control', function(data, time) {
                 console.log('blink');
                 console.log(data);
                 if(Number(data) === 1){
