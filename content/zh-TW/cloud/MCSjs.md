@@ -1,4 +1,4 @@
-## 使用 MCSjs 讓 MCS 來操控 linkit smart 7688
+## 使用 MCSjs 讓 MCS 來操控 LinkIt smart 7688
 
 ### 前言
 
