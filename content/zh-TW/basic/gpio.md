@@ -1,4 +1,4 @@
-## 使用 linkit-smart-gpio 套件來操控 GPIO 
+## 使用 LinkIt-smart-gpio 套件來操控 GPIO 
 
 ### 說明
 
