@@ -32,7 +32,7 @@
         });
         // 這邊輸入上述打的 deviceId 跟 deviceKey
         
-        myApp.on('LED_control', function(time, data) {
+        myApp.on('LED_control', function(data, time) {
             if(Number(data) === 1){                     
                 console.log('blink');
             } else {
