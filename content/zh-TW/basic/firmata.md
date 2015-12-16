@@ -2,7 +2,7 @@
 
 ### 說明
 
-#### 注意 : 本章節適用於 linkit smart 7688 Duo 版子， linkit smart 7688 不可以用哦!
+#### 注意 : 本章節適用於 LinkIt smart 7688 Duo 版子， LinkIt smart 7688 不可以用哦!
 
 前言：linkit smart 7688 上面有兩顆晶片，一顆是跑得動 linux 的 MPU ( 7688 )，另外一顆為 Arduino MCU，對於 Nodejs 開發者而言，我們會希望能夠在 MPU 上跑我們的 Nodejs app，透過這個 app 能夠直接控制 Arduino MCU。因此這個章節我們來透過 Nodejs 的 firmata 套件讓 MPU 跟 Arduino MCU 兩邊能夠溝通。
 
@@ -37,7 +37,7 @@
     
 * 安裝 firmata
 
-    注意！因為 npm 安裝 firmata 套件要做一些 compile 的動作，這會造成l 7688 Duo 執行過久，因此不建議在l 7688 Duo版子上使用 `npm install` 方式安裝 firmata 套件。
+    注意！因為 npm 安裝 firmata 套件要做一些 compile 的動作，這會造成LinkIt smart 7688 Duo 執行過久，因此不建議在 LinkIt smart 7688 Duo 版子上使用 `npm install` 方式安裝 firmata 套件。
     
     因此我們先在本機端（你的電腦）先產生一個 testfirmata folder
     
@@ -57,7 +57,7 @@
         npm install firmata --save
     ```
     
-    因為 firmata 內部引用的一個套件(node-serialport) 在電腦上安裝時會產生你電腦規格的 compile 檔，但是這個套件的mips compile檔已經安裝在我們的l 7688 Duo上面，所以我們必須執行把這套件刪除的動作:
+    因為 firmata 內部引用的一個套件(node-serialport) 在電腦上安裝時會產生你電腦規格的 compile 檔，但是這個套件的mips compile檔已經安裝在我們的 Linkit smart 7688 Duo 上面，所以我們必須執行把這套件刪除的動作:
     ```
         rm -rf ./node_modules/firmata/node_modules/serialport/
     ```
@@ -68,7 +68,7 @@
         tar -cvf ./firmata.tar ./node_modules/firmata
     ```
     
-    將壓縮好的檔案傳進你的 linkit smart 7688 Duo 版子
+    將壓縮好的檔案傳進你的 LinkIt smart 7688 Duo 版子
     
     ```
         scp ./firmata.tar root@mylinkit.local:/root/app/node_modules/
@@ -128,7 +128,7 @@
     ```
         uci set yunbridge.config.disabled=0
     ```
-* 重新啟動 linkit smart 7688 Duo
+* 重新啟動 LinkIt smart 7688 Duo
 * 執行 app.js  
     ``` 
         node app
