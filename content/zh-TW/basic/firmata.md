@@ -141,8 +141,8 @@
 * 按下 ESC 鍵，再輸入 wq! 完成儲存後離開
 * 打開你的 browser :
 
-    * 127.0.0.1:8080?value=high 為打開 led
-    * 127.0.0.1:8080?value=low 為關掉 led
+    * `http://mylinkit.local?value=high` 為打開 led
+    * `http://mylinkit.local?value=low` 為關掉 led
     
 
         
