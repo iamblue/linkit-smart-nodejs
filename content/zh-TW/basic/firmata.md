@@ -79,7 +79,7 @@
 * 回到 `/testfirmata` ：
 * 進去 node_modules 資料夾： `cd node_modules`
 * 解壓縮 tar 檔：`tar -xvf ./firmata`
-* 回到 `/testfirmata`：cd ..
+* 回到 `/testfirmata`：`cd ..`
 * 產生一個 app.js 檔案：
     
     ```
