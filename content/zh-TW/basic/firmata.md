@@ -128,10 +128,6 @@
         });
     ```
     
-* 把 yunbridge 關閉:
-    ```
-        uci set yunbridge.config.disabled=0
-    ```
 * 重新啟動 LinkIt smart 7688 Duo
 * 執行 app.js  
     ``` 
