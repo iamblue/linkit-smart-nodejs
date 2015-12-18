@@ -4,7 +4,7 @@
 
 （注意：在學習這章節之前，請務必先閱讀完 firmata 章節）
 
-這個章節我們來透過 nodejs 上著名的開源專案 cylon.js 來控制 LED 。
+這個章節我們來透過 nodejs 上著名的開源專案 Cylon.js 來控制 LED 。
 
 ### 須先準備
 
