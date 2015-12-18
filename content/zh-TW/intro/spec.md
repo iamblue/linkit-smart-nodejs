@@ -11,12 +11,12 @@
 
 ## 開發板規格
 
+這次在設計兩塊 7688 開發板規格時，有針對 Memory 和 flash 去做適合高階語言的玩家調查，這樣的規格下 npm install 較不會發生 ran out of memory 以及空間不夠 (連 Node.js 都裝不起來) 的問題。以下是規格：
 ![](7688boardspec.png)
 ![](7688Duoboardspec.png)
 
-
 ## 關於 MT7688
 
-以下是 MT7688 這塊晶片的規格，他原是屬於 ap router 的晶片產品，屬於 MPU 等級的晶片。
+以下是 MT7688 這塊晶片的規格，我們可以知道他屬於 ap router 的晶片產品，屬於 MPU 等級的晶片。
 
 ![](7688spec.png)
