@@ -3,7 +3,7 @@
 * 進去您版子上的 WebUI
 * 點選 Network 介面出現如下:
 
-![](螢幕快照 2015-09-03 上午11.28.26.png)
+![](network(ap).png)
 
 * LinkIt smart 7688 一共有兩種 mode，依據您的喜好做選擇:
     * AP mode: 把 LinkIt smart 7688 當作是一個熱點 (如同手機的 hot spot)，讓你的其他 device (例如你的電腦.手機...etc) 可以透過 wifi 連接到您的 LinkIt smart 7688。
