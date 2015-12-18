@@ -6,7 +6,7 @@
 
 （注意：在學習這章節之前，請務必先閱讀完 firmata 章節）
 
-這個章節我們來透過 nodejs 上著名的開源專案 Cylon.js 來控制 LED 。
+這個章節我們來透過 Nodejs 上著名的開源專案 Cylon.js 來控制 LED 。
 
 ### 須先準備
 
@@ -29,7 +29,7 @@
 
 #### MPU 端
 
-* ssh 進去 linkit smart 7688
+* ssh 進去 LinkIt smart 7688
 
 * 產生一個名為 app 的 forlder :
     ``` bash
@@ -43,7 +43,7 @@
     
 * 安裝 `cylon`, `cylon-firmata`, `cylon-gpio`, `cylon-i2c` 套件:
     
-    * 由於以上套件跟安裝 firmata 一樣，要做一些 compile 的動作，這會造成l 7688 Duo 執行過久，因此我們建議使用當初裝 firmata 的方式一樣安裝以上四個套件。
+    * 由於以上套件跟安裝 firmata 一樣，要做一些 node-gyp compile 的動作，這會造成 LinkIt smart 7688 Duo 執行過久，因此我們建議使用當初裝 firmata 的方式一樣安裝以上四個套件。
     * 詳細章節請參考 firmata 章節。
     
     
@@ -70,10 +70,8 @@
         }).start();
         
     ```
-* 按下 ESC 鍵，再輸入 `wq!` 完成儲存後離開
-* 輸入 node app.js 即可看到成果:
-
-
+* 按下 ESC 鍵，再輸入 `wq!` 完成儲存後離開。
+* 輸入 node app.js 即可看到在版子上看到燈號閃爍中。
 * 完成!
     
 
