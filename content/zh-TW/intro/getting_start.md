@@ -25,7 +25,7 @@
 
 [點我閱讀](/)
 
-### 如何燒錄Arduino code 進去 linkit smart 7688 Duo?
+### 如何燒錄 Arduino code 進去 LinkIt smart 7688 Duo?
 
 [點我閱讀](/)
 
