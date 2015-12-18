@@ -1,7 +1,7 @@
 ## 如何 Reset linkit smart 7688
 
 ### 透過版子上的按鈕
-* linkit smart 7688 && linkit smart 7688 Duo: wifi 鍵按下20秒
+* LinkIt smart 7688 && LinkIt smart 7688 Duo: wifi 鍵按下20秒
 * 靜置 2~3 min 即可完成。
 
 
