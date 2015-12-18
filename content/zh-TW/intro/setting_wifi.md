@@ -10,3 +10,5 @@
     * Station mode: 讓 LinkIt smart 7688 連接其他熱點，若您需要讓你的 LinkIt smart 7688 具有連網能力，就請用這個模式連接到其他具有連接對外網路的熱點。
     
 * 按下 configure & restart 後靜置幾分鐘即可使用。
+ 
+
