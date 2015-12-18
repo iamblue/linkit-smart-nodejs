@@ -48,6 +48,6 @@
     ```
         blink!
     ```
-* 完成這以上步驟即代表你的 linkit smart 7688 已成功跟 MCS 完成對話串接。
+* 完成這以上步驟即代表你的 LinkIt smart 7688 已成功跟 MCS 完成對話串接。
 
-### 下個章節我們來實作如何透過 MCS <-> linkit smart 7688 <-> LED (藉由 firmata 套件) 來實際控制真實的 LED 燈。
+### 下個章節我們來實作如何透過 MCS <-> LinkIt smart 7688 <-> LED (藉由 firmata 套件) 來實際控制真實的 LED 燈。
