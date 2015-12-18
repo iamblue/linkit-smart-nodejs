@@ -6,8 +6,8 @@
 
 ### 步驟
 
-* 把 microSD 插進 linkit smart 7688 中
-* ssh 進去你的 linkit smart 7688
+* 把 microSD 插進 LinkIt smart 7688 中
+* ssh 進去你的 LinkIt smart 7688
 * 產生一個名為 app 的 forlder
     ```sh
         > mkdir app
