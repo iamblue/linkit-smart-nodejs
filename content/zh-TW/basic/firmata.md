@@ -4,7 +4,7 @@
 
 #### 注意 : 本章節適用於 LinkIt smart 7688 Duo 版子， LinkIt smart 7688 不可以用哦!
 
-前言：linkit smart 7688 上面有兩顆晶片，一顆是跑得動 linux 的 MPU ( 7688 )，另外一顆為 Arduino MCU，對於 Nodejs 開發者而言，我們會希望能夠在 MPU 上跑我們的 Nodejs app，透過這個 app 能夠直接控制 Arduino MCU。因此這個章節我們來透過 Nodejs 的 firmata 套件讓 MPU 跟 Arduino MCU 兩邊能夠溝通。
+前言：LinkIt smart 7688 上面有兩顆晶片，一顆是跑得動 linux 的 MPU ( 7688 )，另外一顆為 Arduino MCU，對於 Nodejs 開發者而言，我們會希望能夠在 MPU 上跑我們的 Nodejs app，透過這個 app 能夠直接控制 Arduino MCU。因此這個章節我們來透過 Nodejs 的 firmata 套件讓 MPU 跟 Arduino MCU 兩邊能夠溝通。
 
 
 ### 須先準備
@@ -28,7 +28,7 @@
 
 #### MPU 端
 
-* ssh 進去你的 7688
+* ssh 進去你的 `LinkIt smart 7688 Duo`
 
 * 產生一個名為 app 的 forlder
     ``` bash
@@ -57,7 +57,7 @@
         npm install firmata --save
     ```
     
-    因為 firmata 內部引用的一個套件(node-serialport) 在電腦上安裝時會產生你電腦規格的 compile 檔，但是這個套件的mips compile檔已經安裝在我們的 Linkit smart 7688 Duo 上面，所以我們必須執行把這套件刪除的動作:
+    因為 firmata 內部引用的一個套件(node-serialport) 在電腦上安裝時會產生你電腦規格的 compile 檔，但是這個套件的mips compile檔已經安裝在我們的 LinkIt smart 7688 Duo 上面，所以我們必須執行把這套件刪除的動作:
     ```
         rm -rf ./node_modules/firmata/node_modules/serialport/
     ```
