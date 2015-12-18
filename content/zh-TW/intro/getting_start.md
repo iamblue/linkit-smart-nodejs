@@ -29,6 +29,6 @@
 
 [點我閱讀](/)
 
-### 如何設定 wifi 模式( ap mode or station mode )?
+### 如何設定 wifi 模式( AP mode or Station mode )?
 
 [點我閱讀](/)
