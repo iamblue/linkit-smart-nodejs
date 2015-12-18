@@ -128,7 +128,6 @@
         });
     ```
     
-* 重新啟動 LinkIt smart 7688 Duo
 * 執行 app.js  
     ``` 
         node app
