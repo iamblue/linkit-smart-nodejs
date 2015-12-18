@@ -6,7 +6,7 @@
 * 放開後，就會開始看到橘色燈閃爍代表 reset 中
 * 靜置一段時間後，用你的電腦觀察是否有新的 `LinkIt_smart_7688_XXXX` 若有代表即完成。
 
-
+[請參照這段影片](https://www.youtube.com/watch?v=tajIyls6Axw)
 
 ### 透過 WebUI
 * 進去 WebUI 滾到最下頁。
