@@ -1,4 +1,4 @@
-## 在 linkit smart 7688 上安裝 Nodejs 套件
+## 在 LinkIt smart 7688 上安裝 Nodejs 套件
 
 ### 說明
 
