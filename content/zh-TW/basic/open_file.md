@@ -2,7 +2,7 @@
 
 ### 說明
 
-這個章節我們來透過 nodejs 來直接讀取 linkit smart 7688 上面的 microSD 卡內容。
+這個章節我們來透過 nodejs 來直接讀取 LinkIt smart 7688 上面的 microSD 卡內容。
 
 ### 步驟
 
