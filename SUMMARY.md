@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [介紹](content/zh-TW/intro/README.md)
-   * [linkit smart 7688 規格](content/zh-TW/README.md)
+   * [linkit smart 7688 規格](content/zh-TW/spec.md)
    * [開箱設定](content/zh-TW/intro/getting_start.md)
    * [如何設定網路?](content/zh-TW/intro/setting_wifi.md)
    * [如何 ssh 進 linkit smart 7688](content/zh-TW/intro/ssh_7688.md)
