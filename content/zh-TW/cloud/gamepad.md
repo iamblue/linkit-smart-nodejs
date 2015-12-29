@@ -1,4 +1,4 @@
-## 使用 LinkIt smart 7688 Duo 搭配 MCS 製作遙控戰車
+## 使用 LinkIt smart 7688 Duo 搭配 MCS gamepad channel 製作遙控戰車
 
 ![](tank_prototype.png)
 
