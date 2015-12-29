@@ -11,11 +11,21 @@
 注意: 在 MCS 中 create 出 test device 後，會在該 device detail page 的畫面的右上方得到 deivceId 跟 deviceKey 即為下面步驟的 deviceId 跟 deviceKey。
 
 ### 準備器材
+
 * L289N 馬達驅動版
-* 戰車一台
+* 戰車一台：http://goods.ruten.com.tw/item/show?21438261771967
+
+### 架構
+
+### MCU (Arduino) 端步驟
+
+* 開啟 Arduino IDE。
+* Tools -> board 選擇 Linkit smart 7688。
+* Port -> 選擇有 Linkit smart 7688 port 的。 
+* 燒錄這段 code: https://gist.github.com/iamblue/c71727f6cba953fcfd70
 
 
-### 步驟
+### MPU (MT7688) 端步驟
 
 * 確定跟你的 linkit smart 7688 連線
 * ssh 進去
@@ -31,32 +41,31 @@
     ```
         vim app.js
     ```
-* 輸入:
-    ```
+* 輸入: (詳情請進: https://gist.github.com/iamblue/27d79a58827093f4442c)
+    
+    ``` js
         var mcs = require('mcsjs');
-        
-        var myApp = mcs.register({
-            deviceId: 'Input your deviceId',
-            deviceKey: 'Input your deviceKey',
-        });
-        // 這邊輸入上述打的 deviceId 跟 deviceKey
-        
-        myApp.on('LED_control', function(data, time) {
-            if(Number(data) === 1){                     
-                console.log('blink');
-            } else {
-                console.log('off');
-            }
-        }); 
-    ```
-* 存檔成功後執行 node app
-* 這時候回到 MCS 畫面，按下這個 data channel 的 switch按鈕。 
-    ![](螢幕快照 2015-09-03 下午3.01.14.png)
-    ![](螢幕快照 2015-09-03 下午3.03.10.png)
-* 在切回 command line ，你就會看到
-    ```
-        blink!
-    ```
-* 完成這以上步驟即代表你的 LinkIt smart 7688 已成功跟 MCS 完成對話串接。
 
-### 下個章節我們來實作如何透過 MCS <-> LinkIt smart 7688 <-> LED (藉由 firmata 套件) 來實際控制真實的 LED 燈。
+        // regist your device to mcs.
+        var myApp = mcs.register({
+            deviceId: 'Input your deviceId',   // Input your deviceId.
+            deviceKey: 'Input your deviceKey', // Input your deviceKey.
+        });
+
+        var SerialPort = require("serialport").SerialPort;
+        var serialPort = new SerialPort("/dev/ttyS0", {
+            baudrate: 57600
+        });
+
+        // communicate with Arduino chip (32U4).
+        serialPort.on("open", function () {
+            // listen the mcs command.
+            myApp.on('gamepad', function(data, time) { // gamepad is your datachannel.
+                serialPort.write(data); // send message to Arduino chip.
+            });
+        });
+```
+
+* 存檔成功後執行 node app (command line 視窗不能關閉)
+* 這時候回到 MCS 畫面，按下這個 data channel 的 上下左右鍵或者是鍵盤的w,s,a,d。 
+* 就可以看到戰車在移動囉！
