@@ -17,7 +17,13 @@
 
 ### 架構
 
-### MCU (Arduino) 端步驟
+![](tank_arch.png)
+
+
+
+L298N 跟的四根 pin 腳分別接上 Linkit smart 7688 Duo 的 D2,D3,D4,D5 。 
+
+### MCU (ATMega32U4) 端步驟
 
 * 開啟 Arduino IDE。
 * Tools -> board 選擇 Linkit smart 7688。
