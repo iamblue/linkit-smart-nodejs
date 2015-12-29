@@ -1,5 +1,7 @@
 ## 使用 LinkIt smart 7688 Duo 搭配 MCS 製作遙控戰車
 
+![](tank.jpg)
+
 ### 前言
 
 請先看 [這個教學](https://mcs.mediatek.com/resources/latest/tutorial/getting_started) 在 MCS 中 create 好一個內容只有一個 gamepad (control type) 且 data channel ID 名為 gamepad 的 data channel 的 test device。
@@ -73,4 +75,5 @@ L298N 跟的四根 pin 腳分別接上 Linkit smart 7688 Duo 的 D2,D3,D4,D5 。
 
 * 存檔成功後執行 node app (command line 視窗不能關閉)
 * 這時候回到 MCS 畫面，按下這個 data channel 的 上下左右鍵或者是鍵盤的w,s,a,d。 
+![](gamepad_mcsview.png)
 * 就可以看到戰車在移動囉！
