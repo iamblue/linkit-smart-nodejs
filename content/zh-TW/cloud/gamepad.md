@@ -18,8 +18,7 @@
 ### 架構
 
 ![](tank_arch.png)
-
-
+![](gamepad_pinout.png)
 
 L298N 跟的四根 pin 腳分別接上 Linkit smart 7688 Duo 的 D2,D3,D4,D5 。 
 
