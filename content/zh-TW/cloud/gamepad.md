@@ -10,6 +10,9 @@
 
 注意: 在 MCS 中 create 出 test device 後，會在該 device detail page 的畫面的右上方得到 deivceId 跟 deviceKey 即為下面步驟的 deviceId 跟 deviceKey。
 
+### 架構
+
+
 ### 步驟
 
 * 確定跟你的 linkit smart 7688 連線
