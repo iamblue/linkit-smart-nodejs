@@ -1,5 +1,7 @@
 ## 使用 LinkIt smart 7688 Duo 搭配 MCS 製作遙控戰車
 
+![](tank_prototype.png)
+
 ![](tank.jpg)
 
 ### 前言
