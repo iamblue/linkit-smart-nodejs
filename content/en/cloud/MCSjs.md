@@ -1,28 +1,28 @@
-## 使用 MCSjs 讓 MCS 來操控 LinkIt smart 7688
+## Let MCS control LinkIt smart 7688 by using MCSjs
 
-### 前言
+### Prerequisite
 
-請先看 [這個教學](https://mcs.mediatek.com/resources/latest/tutorial/getting_started) 在 MCS 中 create 好一個內容只有一個 on/off (control type) 且 data channel ID 名為 LED_control 的 data channel 的 test device。
+Please go through [this tutorial](https://mcs.mediatek.com/resources/latest/tutorial/getting_started) . It will guide you to create a test device in MCS. The device contains one on/off control type and one data channel with data channel ID named LED_control.
 
-注意: 在 MCS 中 create 出 test device 後，會在該 device detail page 的畫面的右上方得到 deivceId 跟 deviceKey 即為下面步驟的 deviceId 跟 deviceKey。
+Note: After the test device is created in MCS,  we need the deivceId and deviceKey on the right upper corner of device detail page. The  deivceId and deviceKey will be used in the following steps.
 
-### 步驟
+### Steps
 
-* 確定跟你的 linkit smart 7688 連線
-* ssh 進去
-* 創建一個資料夾並進去:
+* Check the connection of linkit smart 7688.
+* ssh into it.
+* Create a folder and go into that folder, and do npm initialization:
     ``` 
         mkdir app && cd app && npm init
     ```
-* 安裝 MCSjs modules:
+* Install MCSjs modules:
     ``` 
         npm install mcsjs
     ```
-* 編輯 app.js:
+* Edit app.js:
     ```
         vim app.js
     ```
-* 輸入:
+* input the content:
     ```
         var mcs = require('mcsjs');
         
@@ -30,7 +30,7 @@
             deviceId: 'Input your deviceId',
             deviceKey: 'Input your deviceKey',
         });
-        // 這邊輸入上述打的 deviceId 跟 deviceKey
+        // Input the deviceId and deviceKey mentioned above.
         
         myApp.on('LED_control', function(data, time) {
             if(Number(data) === 1){                     
@@ -40,14 +40,14 @@
             }
         }); 
     ```
-* 存檔成功後執行 node app
-* 這時候回到 MCS 畫面，按下這個 data channel 的 switch按鈕。 
+* Save and run node app
+* Go back to MCS screen, and press the switch button on the data channel below.
     ![](螢幕快照 2015-09-03 下午3.01.14.png)
     ![](螢幕快照 2015-09-03 下午3.03.10.png)
-* 在切回 command line ，你就會看到
+* Switch to command line, and you will see:
     ```
         blink!
     ```
-* 完成這以上步驟即代表你的 LinkIt smart 7688 已成功跟 MCS 完成對話串接。
+* The LinkIt smart 7688 and MCS are successfully connected if the above step works fine.
 
-### 下個章節我們來實作如何透過 MCS <-> LinkIt smart 7688 <-> LED (藉由 firmata 套件) 來實際控制真實的 LED 燈。
+### We will control real LED light though the connection between  MCS <-> LinkIt smart 7688 <-> LED (by firmata package).
