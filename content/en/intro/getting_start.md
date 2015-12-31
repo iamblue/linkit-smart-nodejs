@@ -1,9 +1,10 @@
-## 開箱設定
+## Initial Setup
 
-### 準備
-* 一條 microUSB 傳輸線，請把 USB 那端接在電腦或插座上， microUSB 那頭插在 LinkIt smart 7688 有斜角那側的 USB 孔上 ( 即圖中的 USB Power ):
+### Preparation
+* One microUSB cable. Please attach the USB connector to the PC or electric outlet, and the microUSB connector to the microUSB connector on the beveled side of LinkIt smart 7688 board (i.e. the USB Power shown in the following figure).
 
-![](https://iamblue.gitbooks.io/linkit-smart-nodejs/content/content/zh-TW/intro/pwr.png)
+
+![](pwr.png)
 
 ### 步驟
 
