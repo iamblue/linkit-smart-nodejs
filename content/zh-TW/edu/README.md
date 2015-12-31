@@ -9,9 +9,9 @@
 
 本章節的族群屬於想提供 『國中小學』的教材者，務必要先準備一些事情。
 
-## LinkIt smart 7688 Duo 把 Yunbridge 開啟
+## 在 LinkIt smart 7688 Duo 上把 Yunbridge 開啟
 
-在多數的物聯網專案都需要 wifi 需求，而 Duo 上的 7688 可以提供 wifi 給沒有 wifi 的 Arduino chip 使用。但是 Duo 預設的運算上以 MPU 為主 MCU (Arduino) 為輔，因此需要去把 Yunbridge 做開啟的動作：
+多數的物聯網專案都有 wifi 需求，而 Duo 上的 MT7688 可以提供 wifi 給沒有 wifi 的 Arduino chip (32U4) 使用。但是 Duo 預設的運算上以 MPU (MT7688) 為主 MCU (Arduino) 為輔，若要轉變成 MCU (Arduino) 為主 MPU (MT7688) 為輔的話因此需要去把 Yunbridge 做開啟的動作：
 
 * 首先，先進到 WebUI 把 Duo 設定成 station mode 到外網。
 * 透過 ssh 進去 LinkIt smart 7688 Duo:
