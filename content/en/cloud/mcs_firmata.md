@@ -1,27 +1,25 @@
-## 使用 MCS + firmata 控制 LED
+## Use MCS + firmata to control LED
 
-### 前言
+### Prerequisite
 
-請先閱讀完畢 [之前的章節](/content/zh-TW/cloud/MCSjs.md)。
+Please finish [previous chapters]/content/en/cloud/MCSjs.md).
 
-### 電路圖
+### Circuit Diagram
 
-LED 的火線請接 D13。
+Please connect the hot wire of LED to D13.
 
+### Steps
 
-### 步驟
+### MCU Side
 
-### MCU 端
+* Open Arduino IDE
+* copy the code from this site  https://gist.github.com/edgarsilva/e73c15a019396d6aaef2
+* Burn the code into Arduino
 
-* 打開你的 Arduino IDE 
-* copy 這網址的內容: https://gist.github.com/edgarsilva/e73c15a019396d6aaef2 
-* 燒錄進去 Arduino  
-
-### MPU 端
-* 確認 LinkIt smart 7688 是否已經連接
-* ssh 進去
-* 編輯之前章節的 app.js ( 把原來的內容清空 )
-
+### MPU Side
+* Confirm the connection to LinkIt smart 7688.
+* ssh into it.
+* Replace the previous content of app.js with the following:
     ```js
         var ledPin = 13;         
         var firmata = require('firmata');     
@@ -50,7 +48,6 @@ LED 的火線請接 D13。
             }); 
         });   
     ```
-    
-* 存檔成功後執行 node app
-* 按下 MCS 的 switch 後，就可以看到 LED 燈隨著變化囉!
-* 完成!
+* Save file, and run node app.
+* Press the switch in MCS, and the LED will change with it.
+* We have done here!
