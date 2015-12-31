@@ -30,12 +30,12 @@ Preface: LinkIt Smart 7688 has two chips, one is the MPU (7688) capable to run l
 
 * ssh into your `LinkIt smart 7688 Duo`.
 
-* Generate a folder named ‘app’.
+* Generate a folder named `app`.
     ``` bash
         > mkdir app && cd app
     ```
     
-* Install firmata
+* Install `firmata`
 
     Notice! Because there are some compilation procedures during npm install, which will cause too long running time on LinkIt smart 7688 Duo, it is not recommended to use `npm install` method for firmata package.
     
@@ -51,18 +51,18 @@ Preface: LinkIt Smart 7688 has two chips, one is the MPU (7688) capable to run l
         npm init 
     ```
     
-    Install firmata:
+    Install `firmata`:
     
     ```
         npm install firmata --save
     ```
     
-    Because of a dependent package inside firmata, it will generate the compilation spec file according on your computer's spec during installation on your computer. However, the MIPS compilation spec file has already been installed on LinkIt Smart 7688 Duo, so we must erase this package manually:
+    Because of a dependent package inside `firmata`, it will generate the compilation spec file according on your computer's spec during installation on your computer. However, the MIPS compilation spec file has already been installed on LinkIt Smart 7688 Duo, so we must erase this package manually:
     ```
         rm -rf ./node_modules/firmata/node_modules/serialport/
     ```
     
-    Package firmata folder:
+    Package `firmata` folder:
     
     ```
         tar -cvf ./firmata.tar ./node_modules/firmata
@@ -73,7 +73,7 @@ Preface: LinkIt Smart 7688 has two chips, one is the MPU (7688) capable to run l
     ```
         scp ./firmata.tar root@mylinkit.local:/root/app/node_modules/
     ```
-    (If something like 'can not find node_modules folder' appears, please return to /app folder on your board and make a folder named 'node_modules': `mkdir node_modules`)
+    (If something like `can not find node_modules folder` appears, please return to `/app` folder on your board and make a folder named `node_modules`: `mkdir node_modules`)
     
 * Go back to your board's terminal.
 * Back to `/testfirmata`:
