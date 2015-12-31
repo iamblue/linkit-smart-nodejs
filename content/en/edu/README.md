@@ -1,42 +1,42 @@
-## 教育方案
+## Educational programs
 
-我們觀察 Maker 教育上的分成兩個族群，為會使用 Linux 以及不會使用 Linux 族群，剛好 LinkIt smart 7688 與 LinkIt smart 7688 Duo 分別代表這兩個族群。
+We observed that Maker in education can be divided into two groups: one capable of using of Linux and the other one not.
 
- 國中小學生因沒有基礎 Linux 知識，加上 Arduino community 已有各種拖拉式 GUI 介面 open source 軟體 (例如 Scratch) 因此這族群的以使用 Arduino 為主要開發，在教育上我們建議:
+ Elementary or high school students do not have basic Linux knowledge. Besides, Arduino communities already have a variety of open source software with drag and drop GUI interface (such as Scratch), so this group would majorly use the Arduino as the main development environment. In education, we recommend:
 
-* 國中小學： LinkIt smart 7688 Duo
-* 高中. 大學： LinkIt smart 7688 or LinkIt smart 7688 Duo
+* Elementary and junior high schools: LinkIt smart 7688 Duo
+* Senior high schools and universities: LinkIt smart 7688 or LinkIt smart 7688 Duo
 
-本章節給想提供 『國中小學』的教材族群閱讀。
+This section provide to those who are to provide "elementary and junior high schools' educational resources and textbooks.
 
-## 在 LinkIt smart 7688 Duo 上把 Yunbridge 開啟
+## Open the Yunbridge on LinkIt smart 7688 Duo
 
-多數的物聯網專案都有 wifi 需求，而 Duo 上的 MT7688 可以提供 wifi 給沒有 wifi 的 Arduino chip (32U4) 使用。但是 Duo 預設的運算上以 MPU (MT7688) 為主 MCU (Arduino) 為輔，若要轉變成 MCU (Arduino) 為主 MPU (MT7688) 為輔的話因此需要去把 Yunbridge 做開啟的動作：
+Most Internet of Things projects needs wifi, and MT7688 Duo may provide wifi to the Arduino chip (32U4) which does not have wifi. However,  default operation on Duo takes MPU (MT7688) and MCU (Arduino) as backup.  If it need to turn to a MCU (Arduino) major, MPU (MT7688) minor system, it need to do something to open up the Yunbridge:
 
-* 先進到 WebUI 把 Duo 設定成 station mode 到外網。
-* 透過 ssh 進去 LinkIt smart 7688 Duo:
+* Enter advanced WebUI, set the Duo to station mode to connect to the external network.
+* ssh into LinkIt smart 7688 Duo:
 ```
     ssh root@mylinkit.local
 ```
-* 把 yunbridge 開啟:
+* Turn yunbridge on:
 ```
     uci set yunbridge.config.disabled=0
 ```
-* 儲存以上的 commit：
+* Save the above commit:
 ```
     uci commit
 ```
-* 重新開機:
+* Reboot:
 ```
     reboot
 ```
 
-## 在 Arduino 端用 HttpClient 確定 bridge 已通。 
+## In Arduino side, use HttpClient to make sure bridge has been open.
 
-* 打開你的 Arduino IDE
+* Open your Arduino IDE.
 * File -> example -> Bridge -> HttpClient
-* 把這個範例燒錄進去
-* 打開 Arduino 監控視窗(放大鏡圖樣) 看到這畫面即代表成功。
+* Burn this example into board.
+* Open Arduino monitor window (magnifying glass icon). If this screen is seen, it succeeds.
 * ![](httpclient.png)
 
-## 完成以上教材準備後，就可以讓學生專心在 Arduino IDE 上開發物聯網專案。
+## After preparing the above materials, you can let students to concentrate on the development of the Internet of Things project on Arduino IDE.
