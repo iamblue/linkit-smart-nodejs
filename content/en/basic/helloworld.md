@@ -14,13 +14,13 @@ In this section, we are creating the first `Hello world` program through Node.js
     ``` bash
         > vim app.js
     ```
-* In app.js, press 'i' and enter the following codes:
+* In app.js, press `i` and enter the following codes:
     ``` js
         console.log('Hello world');
         
     ```
-* Press 'ESC', then enter 'wq!' to save and leave.
-* Enter 'node app.js' and the results can be seen as below:
+* Press `ESC`, then enter `wq!` to save and leave.
+* Enter `node app.js` and the result can be seen as below:
     ``` bash
         > Hello world
     ```
