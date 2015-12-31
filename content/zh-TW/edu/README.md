@@ -36,5 +36,5 @@ LinkIt smart 7688 Duo 運算上以 MPU 為主 MCU (Arduino) 為輔，因此若�
 * 打開你的 Arduino IDE
 * File -> example -> Bridge -> HttpClient
 * 把這個範例燒錄進去
-* 打開 Arduino 監控視窗
+* 打開 Arduino 監控視窗，看到這畫面即代表成功。
 * ![](httpclient.png)
