@@ -1,24 +1,24 @@
-## 如何讓 LinkIt smart 7688 開機時自動啟動您的 Nodejs App ?
+## How to make your Node.js app start automatically on LinkIt Smart 7688 booting?
 
-### 說明
+### Aim
 
-這個章節我們來透過 linux 的基本指令讓 LinkIt smart 7688 開機時自動啟動開發者的 Nodejs App.
+In this section, we are going to use some basic linux commands to make developer's Node.js app start automatically on LinkIt Smart 7688.
 
-### 須先準備
+### Prerequisites
 
-* 你的 awesome Nodejs App
+* Your awesome Node.js App
 
-### 流程
+### Process
 
-* 確定跟你的版子已連線
-* ssh 進去
-* 編輯 /etc/rc.local:
+* Make sure your board is connected properly.
+* ssh into it.
+* Edit `/etc/rc.local`:
 
 ```
     vim /etc/rc.local
 ```
 
-* 參考這內容把 `/etc/rc.local` 編輯程你想要執行的 app 路徑:
+* Refer to the content below and make `/etc/rc.local` into your app's path:
 
 ```
 #!/bin/sh -e
@@ -28,10 +28,10 @@ node /root/app/app.js
 exit 0
 ```
 
-* 存檔後，設定 `/etc/rc.local` 權限:
+* After file saved, setup `/etc/rc.local` permissions:
 
 ```
 chown 777 /etc/rc.local
 
 ```
-* 重新開機後就可以看到結果囉！
+* Reboot and you will see the results! Bravo!
