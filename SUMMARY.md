@@ -1,11 +1,8 @@
 # Summary
 
-### 語系 
+### Language
 [ 繁體中文 ]
 [ English ]
-
-
-###
 
 * [Introduction](README.md)
 * [介紹](content/zh-TW/intro/README.md)
