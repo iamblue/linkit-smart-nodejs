@@ -1,5 +1,12 @@
 # Summary
 
+### 語系 
+[ 繁體中文 ]
+[ English ]
+
+
+###
+
 * [Introduction](README.md)
 * [介紹](content/zh-TW/intro/README.md)
    * [LinkIt smart 7688 規格](content/zh-TW/intro/spec.md)
