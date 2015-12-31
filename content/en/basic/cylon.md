@@ -1,57 +1,57 @@
-## 使用 Cylon.js 來控制 LED
+## Controlling LED with Cylon.js
 
 ![](cylon.png)
 
-### 說明
+### Aim
 
-（注意：在學習這章節之前，請務必先閱讀完 firmata 章節）
+(Notice: Before studying this section, be sure to finish firmata section)
 
-這個章節我們來透過 Nodejs 上著名的開源專案 Cylon.js 來控制 LED 。
+In this section, we are going to use the famous open source project `Cylon.js` on Nodejs to control LED.
 
-### 須先準備
+### Prerequisites
 
-#### 控制 LED 須準備
+#### Control LED needs
 
-(跟 firmata 章節一樣)
+(as the firmata section)
 * LED x 1
-* 電阻 x 1
-* 杜邦線數條
+* Resistor x 1
+* A few DuPont wires
 
-#### 電路圖
-(跟 firmata 章節一樣)
+#### Circuit diagram
+(as the firmata section)
 
-### 步驟
+### Steps
 
-#### MCU 端
-* 打開你的 Arduino IDE 
-* copy 這網址的內容: https://gist.github.com/edgarsilva/e73c15a019396d6aaef2 
-* 燒錄進去 Arduino  
+#### MCU side
+* Open your Arduino IDE. 
+* Copy the contents in this URL: https://gist.github.com/edgarsilva/e73c15a019396d6aaef2 
+* Burn into Arduino.  
 
-#### MPU 端
+#### MPU side
 
-* ssh 進去 LinkIt smart 7688
+* ssh into LinkIt Smart 7688.
 
-* 產生一個名為 app 的 forlder :
+* Generate a folder named 'app':
     ``` bash
         > mkdir app && cd app
     ```
 
-* 產生 app.js :
+* Generate `app.js`:
     ``` bash
         > vim app.js
     ```
     
-* 安裝 `cylon`, `cylon-firmata`, `cylon-gpio`, `cylon-i2c` 套件:
+* Install `cylon`, `cylon-firmata`, `cylon-gpio`, `cylon-i2c` package:
     
-    * 由於以上套件跟安裝 firmata 一樣，要做一些 node-gyp compile 的動作，這會造成 LinkIt smart 7688 Duo 執行過久，因此我們建議使用當初裝 firmata 的方式一樣安裝以上四個套件。
-    * 詳細章節請參考 firmata 章節。
+    * Due to the same reason as firmdata, node-gyp actions will cause too long running time on LinkIt Smart 7688 Duo. So we recommend using the same way as the firmata to install these four packages.
+    * For detailed procedures, please refer to firmata section.
     
     
-* 以上四個套件都確認安裝在 /node_modules folder 下後，在根目錄 (/app) 下新增 app.js ：
+* After confirming above four kits is installed at /node_modules folder, add `app.js` in the root directory (`/app`)：
     ```
         vim app.js
     ```
-* 按下 i 鍵後撰寫寫：
+* After pressing the `i` key, enter:
     ``` js
         var Cylon = require('cylon');
 
@@ -70,9 +70,9 @@
         }).start();
         
     ```
-* 按下 ESC 鍵，再輸入 `wq!` 完成儲存後離開。
-* 輸入 node app.js 即可看到在版子上看到燈號閃爍中。
-* 完成!
+* Press `ESC`, then enter `wq!` to save and leave.
+* Enter `node app.js` to see see lights on the board flashing.
+* Done!
     
 
         
