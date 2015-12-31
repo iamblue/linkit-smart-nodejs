@@ -12,11 +12,11 @@ In this section, we are going to read files in the microSD within LinkIt Smart 7
     ```sh
         > mkdir app
     ```
-* Generate app.js. 
+* Generate `app.js`. 
     ```sh
         > vim app.js
     ```
-* Press 'i' key and edit app.js:
+* Press `i` and edit `app.js`:
     ``` js
         var fs = require('fs');
         // **** Remarks ****
@@ -29,8 +29,8 @@ In this section, we are going to read files in the microSD within LinkIt Smart 7
         
     ```
     
-* Press the ESC key, then enter wq! to save and leave.
-* Enter 'node app.js', and the results can be seen! 
+* Press `ESC`, then enter `wq!` to save and leave.
+* Enter `node app.js`, and the results can be seen! 
 
 
     
