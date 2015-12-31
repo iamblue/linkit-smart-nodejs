@@ -2,7 +2,6 @@
 
 * [Introduction](content/en/intro/README.md)
    * [LinkIt smart 7688 Spec](content/en/intro/spec.md)
-      * [En](content/en/intro/spec.md)
       * [(中文) LinkIt smart 7688 規格](content/zh-TW/intro/spec.md)
    * [Initial Setup](content/en/intro/getting_start.md)
       * [En](content/en/intro/getting_start.md)
