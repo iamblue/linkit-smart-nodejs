@@ -7,7 +7,7 @@
 * 國中小學： LinkIt smart 7688 Duo
 * 高中. 大學： LinkIt smart 7688 or LinkIt smart 7688 Duo
 
-本章節的族群屬於想提供 『國中小學』的教材者，務必要先準備一些事情。
+本章節的給想提供 『國中小學』的教材的族群看，務必要先準備一些事情。
 
 ## 在 LinkIt smart 7688 Duo 上把 Yunbridge 開啟
 
