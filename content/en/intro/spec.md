@@ -1,17 +1,18 @@
-## 前言
+## Preface
 
-聯發科在 2015/12/1 當天發布兩塊 LinkIt smart 系列的版子，分別為 7688 及 7688 Duo。
+Mediatek Inc. released two LinkIt smart series boards on 2015/12/1 - 7688 and 7688 Duo, respectively.
 
 
-## 架構圖：
+## Framework Diagram
 
 ![](https://iamblue.gitbooks.io/linkit-smart-nodejs/content/content/zh-TW/intro/7688&Duo.png)
 
-這是簡單架構圖表示 7688 與 7688 Duo，我們可以看到兩塊版子都使用 MT7688 晶片。 7688 Duo 比 7688 多一顆 Arduino 晶片 (32U4)，簡單來說，擁有 Duo 人可以多出使用 Arduino sensor 的玩法。 
+This simple framework diagram shows the 7688 and 7688 Duo, as we can see, both these two boards use MT7688 chip. 7688 Duo has one more Arduino chip (32U4) than 7688. Simply speaking, users with 7688 Duo can have more options to play with Arduino sensors.
 
-## 開發板規格
 
-這次在設計兩塊 7688 開發板規格時，有針對 Memory 和 flash 去做適合高階語言的玩家調查，這樣的規格下 npm install 較不會發生 ran out of memory 以及空間不夠 (連 Node.js 都裝不起來) 的問題。以下是規格：
+## Development Board Specification
+
+During defining the specifications for these two 7688 development boards, the memory and flash suitable for high level language players have been surveyed. Under this specification, the problems encountered in the npm install could be nearly avoided, for example, ran out of memory, or storage space shortage (even can not install Node.js). Here is the specification:
 ![](7688boardspec.png)
 ![](7688Duoboardspec.png)
 
