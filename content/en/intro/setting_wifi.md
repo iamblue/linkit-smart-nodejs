@@ -1,4 +1,4 @@
-## 如何設定 wifi 模式?
+## How to setup WiFi mode?
 
 * 進去您版子上的 WebUI
 * 點選 Network 介面出現如下:
