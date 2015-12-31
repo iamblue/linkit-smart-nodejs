@@ -36,7 +36,7 @@
 * [基礎](content/en/basic/README.md)
    * [在 LinkIt smart 7688 上 run 第一隻 Hello world 程式](content/en/basic/helloworld.md)
    * [在 LinkIt smart 7688 上安裝 Nodejs 套件](content/en/basic/npm.md)
-   * [使用 mraa 來操控 GPIO](content/en/basic/mraa.md)
+   * [Use mraa kit to control GPIO](content/en/basic/mraa.md)
    * [打開 microSD 上的檔案](content/en/basic/open_file.md)
    * [如何使用 video streaming](content/en/basic/video_streaming.md)
    * [使用 firmata 來控制 LED](content/en/basic/firmata.md)
