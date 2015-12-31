@@ -5,16 +5,11 @@ LinkIt smart 7688 x Nodejs
 
 本電子書適合給想在 LinkIt smart 7688 版子上面開發豐富的 Nodejs application 的玩家們閱讀。
 
-同時也因應世界潮流，本電子書會未來會循序漸進至少提供三種語言(簡體. 繁體. 英文)
+同時也因應世界潮流，本電子書會未來會循序漸進至少提供三種語言(中文. 英文)
 
 # Preface
 
-This e-book is suitable for the players who want to develop various kinds of Nodejs applications in Linkit smart 7688 board to read. Besides, in response to the global trend, this e-book will be gradually provided at least in three languages (Simplified Chinese. Traditional Chinese. English.)
-
-
-### Language
-[ [繁體中文](https://iamblue.gitbooks.io/linkit-smart-7688-nodejs/content/) ]
-
+This e-book is suitable for the players who want to develop various kinds of Nodejs applications in Linkit smart 7688 board to read. Besides, in response to the global trend, this e-book will be gradually provided at least in three languages (Traditional Chinese. English.)
 
 
 ### 注意事項
@@ -23,7 +18,6 @@ This e-book is suitable for the players who want to develop various kinds of Nod
 
 2. 本電子書也向大眾徵稿，如果您有更好的 idea 或者是文章想貢獻歡迎至 github 提交您的 PR ( 請記得檔案/文章/內文要符合規範) 審核通過後我會把它納入本書章節之中。
 
-[ [English](https://iamblue.gitbooks.io/linkit-smart-7688-nodejs/content/) ]
 
 ### Precautions
 
