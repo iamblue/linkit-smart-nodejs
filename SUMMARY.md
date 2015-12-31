@@ -24,4 +24,12 @@
 * [Web of things](content/zh-TW/wot/README.md)
 * [經典範例](content/zh-TW/example/README.md)
    * [使用 touch sensor 觸發 LED](content/zh-TW/example/touch_sensor.md)
+  
 
+# 目錄
+
+* [Introduction](README.md)
+* [介紹](content/en/intro/README.md)
+   * [LinkIt smart 7688 規格](content/en/intro/spec.md)
+   * [開箱設定](content/en/intro/getting_start.md)
+   * [如何設定網路?](content/en/intro/setting_wifi.md)
