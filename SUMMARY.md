@@ -26,8 +26,6 @@
    * [使用 touch sensor 觸發 LED](content/zh-TW/example/touch_sensor.md)
   
 
-# 目錄
-
 * [Introduction](README.md)
 * [介紹](content/en/intro/README.md)
    * [LinkIt smart 7688 規格](content/en/intro/spec.md)
