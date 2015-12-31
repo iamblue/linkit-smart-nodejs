@@ -5,7 +5,7 @@ Mediatek Inc. released two LinkIt smart series boards on 2015/12/1 - 7688 and 76
 
 ## Framework Diagram
 
-![](https://iamblue.gitbooks.io/linkit-smart-nodejs/content/content/zh-TW/intro/7688&Duo.png)
+![](7688&Duo.png)
 
 This simple framework diagram shows the 7688 and 7688 Duo, as we can see, both these two boards use MT7688 chip. 7688 Duo has one more Arduino chip (32U4) than 7688. Simply speaking, users with 7688 Duo can have more options to play with Arduino sensors.
 
@@ -16,8 +16,8 @@ During defining the specifications for these two 7688 development boards, the me
 ![](7688boardspec.png)
 ![](7688Duoboardspec.png)
 
-## 關於 MT7688
+## About MT7688
 
-以下是 MT7688 這塊晶片的規格，我們可以知道他屬於 ap router 的晶片產品，屬於 MPU 等級的晶片。
+Below is the specification of MT7688, we can see that it is kind of AP router chip product, and it is belong to MPU grade chip.
 
 ![](7688spec.png)
