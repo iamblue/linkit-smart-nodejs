@@ -21,6 +21,7 @@
    * [使用 MCSjs 讓 MCS 來操控 linkit smart 7688](content/zh-TW/cloud/MCSjs.md)
    * [使用 MCS + firmata 控制 LED](content/zh-TW/cloud/mcs_firmata.md)
    * [使用 LinkIt smart 7688 Duo 搭配 MCS gamepad channel 製作遙控戰車](content/zh-TW/cloud/gamepad.md)
+* [教育方案](content/zh-TW/edu/README.md)
 * [Web of things](content/zh-TW/wot/README.md)
 * [經典範例](content/zh-TW/example/README.md)
    * [使用 touch sensor 觸發 LED](content/zh-TW/example/touch_sensor.md)
