@@ -25,7 +25,7 @@
 * [經典範例](content/zh-TW/example/README.md)
    * [使用 touch sensor 觸發 LED](content/zh-TW/example/touch_sensor.md)
 * [英文分水嶺](README.md)
-* [Welcome](README.md)
+* [README](README.md)
 * [Introduction](content/en/intro/README.md)
    * [LinkIt smart 7688 Spec](content/en/intro/spec.md)
    * [Initial Setup](content/en/intro/getting_start.md)
