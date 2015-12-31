@@ -7,6 +7,10 @@ LinkIt smart 7688 x Nodejs
 
 同時也因應世界潮流，本電子書會未來會循序漸進至少提供三種語言(簡體. 繁體. 英文)
 
+### Language
+[ [繁體中文](https://iamblue.gitbooks.io/linkit-smart-7688-nodejs/content/) ]
+[ [English](https://iamblue.gitbooks.io/linkit-smart-7688-nodejs/content/) ]
+
 
 ### 注意事項
 
