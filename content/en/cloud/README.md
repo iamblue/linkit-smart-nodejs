@@ -1,3 +1,3 @@
-## 輕易結合雲端服務 (MCS)
+## Easy Integration with Cloud Service (MCS)
 
-本大系列章節為如何在 LinkIt smart 7688 如何輕易結合 MCS
+This chapter is about the integration of LinkIt smart 7688 and MCS.
