@@ -1,3 +1,3 @@
-## LinkIt smart 7688 介紹
+## Introduction to LinkIt smart 7688
 
-本大系列章節為如何在 LinkIt smart 7688 的介紹。
+The following series of chapters introduce what LinkIt smart 7688 is.
