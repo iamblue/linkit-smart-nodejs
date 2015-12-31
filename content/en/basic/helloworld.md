@@ -10,7 +10,7 @@ In this section, we are creating the first `Hello world` program through Node.js
     ``` bash
         > mkdir app
     ```
-* Edit app.js 
+* Edit `app.js` 
     ``` bash
         > vim app.js
     ```
