@@ -1,32 +1,32 @@
-## 在 LinkIt smart 7688 上安裝 Nodejs 套件
+## Installation Node.js suite on LinkIt smart 7688
 
-### 說明
+### Aim
 
-這個章節我們說明如何在 LinkIt smart 7688 上安裝您所需要的 Nodejs 套件。
+This section explains how to install the Node.js suite you need on LinkIt smart 7688.
 
-若您在安裝 Nodejs 套件上遇到一些問題，也可以參考下面的 `遇到問題列表` 來尋找您的答案。
+If you encounter some problems on the installing Node.js suite, you can also find your answer in the following `Troubleshooting` list.
 
-### 步驟
+### Steps
 
-* 確定版子有跟您的電腦連線
-* ssh 進去您的版子
-* 進去您的 Nodejs 專案資料夾下
-* 比如說我今天想安裝 express 套件，請下：
+* Make sure the board is connected with your computer correctly.
+* ssh into your board.
+* Go into your Node.js project folder.
+* For example, I want to install express package, enter:
     
     ```
         npm install express
     ```
-* 看到這樣的畫面就是大功告成囉!
+* If you see the following screen, it is all done. Cheers!
 
-Ps. 若您的套件要安裝在 global 的 Nodejs 環境中，請下：
+PS. If your package is to be installed on the Node.js global environment, enter:
 ``` 
     npm install express -g
 ```
 
-### 遇到問題列表
+### Troubleshooting
 
-#### Q. npm install 過久或者是連線逾時
-A. 連線逾時這部分請先檢查您的網路。npm 執行過久請先檢查 npm install 過程中是否有出現 node-gpy ... 之類的字串，若有是因為需要build 出 binary 檔，這邊 LinkIt smart 7688 上面的 mpu 需要執行較久（因為它不像您的電腦 powerful)，建議遇到這樣的情形時，就需要 openWRT 的 toolchain 去build 出 ipk檔，之後再 88 上使用 opkg install 這個 ipk。相關的 build node-gyp package  Makefile建議參考(https://github.com/openwrt/packages/tree/master/lang/node-serialport) 
+#### Q. 'npm install' waits too long or shows connection timed out
+A. For connection time out issue, please check your network first. For 'npm install' time too long, please check if sort of 'node-gpy'... or similar strings shows up during the npm install process. If there is, that is because binary requires to be built. MPU on LinkIt Smart 7688 need longer running time since it is not as powerful as your desktop or notebook computer. It is recommended if such situation encountered, we need to use openWRT toolchain to build the ipk file, and then install the install the ipk with  opkg install on Smart 7688. Related Makefile for building node-gyp package, please refer to(https://github.com/openwrt/packages/tree/master/lang/node-serialport) 
     
         
 
