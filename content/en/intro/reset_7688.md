@@ -6,7 +6,7 @@
 * Release the button, then you will see the orange light starts to flash, which represents the board is in the reset process. 
 * After waiting for a period of time, use your PC to monitor if there is a new `LinkIt_smart_7688_XXXX`. If yes, it stands for completion.
 
-[請參照這段影片](https://www.youtube.com/watch?v=tajIyls6Axw)
+[Please refer to this video](https://www.youtube.com/watch?v=tajIyls6Axw)
 
 ### Via WebUI
 * Enter WebUI and scroll down to the last page.
