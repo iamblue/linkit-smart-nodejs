@@ -22,7 +22,7 @@
 ```
     uci set yunbridge.config.disabled=0
 ```
-* 儲存下：
+* 儲存以上的 commit：
 ```
     uci commit
 ```
@@ -31,7 +31,7 @@
     reboot
 ```
 
-## 在Arduino 端用 HttpClient 確定 bridge 已通。 
+## 在 Arduino 端用 HttpClient 確定 bridge 已通。 
 
 * 打開你的 Arduino IDE
 * File -> example -> Bridge -> HttpClient
