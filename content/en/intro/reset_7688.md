@@ -1,7 +1,7 @@
 ## How to reset linkIt smart 7688
 
 ### Via the button on the board
-* 插上電源後請靜置一段時間讓它完成開機 ( 這步驟一定要做 )。
+* When the board is plugged in, please wait for a period of time to let it finish the bootup process. ( 這步驟一定要做 )。
 * LinkIt smart 7688 && LinkIt smart 7688 Duo: wifi 鍵按下 20 秒。
 * 放開後，就會開始看到橘色燈閃爍代表 reset 中
 * 靜置一段時間後，用你的電腦觀察是否有新的 `LinkIt_smart_7688_XXXX` 若有代表即完成。
