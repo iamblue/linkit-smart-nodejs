@@ -1,30 +1,30 @@
-##在 LinkIt smart 7688 上 run 第一隻 Hello wolrd 程式
+##Running your first 'Hello World' program on LinkIt Smart 7688
 
-### 說明
+### Aim
 
-這個章節我們來透過 Nodejs 來創建第一隻 `Hello world` 程式。
+In this section, we are creating the first `Hello world` program through Node.js.
 
-### 步驟
+### Steps
 
-* 產生一個名為 app 的 forlder
+* Generate a folder named app
     ``` bash
         > mkdir app
     ```
-* 產生 app.js 
+* Edit app.js 
     ``` bash
         > vim app.js
     ```
-* 在 app.js 內容中按下 i 鍵後撰寫：
+* In app.js, press 'i' and enter the following codes:
     ``` js
         console.log('Hello world');
         
     ```
-* 按下 ESC 鍵，再輸入 wq! 完成儲存後離開
-* 輸入 node app.js 即可看到成果:
+* Press 'ESC', then enter 'wq!' to save and leave.
+* Enter 'node app.js' and the results can be seen as below:
     ``` bash
         > Hello world
     ```
-* 完成!
+* Done!
     
 
         
