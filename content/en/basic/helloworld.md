@@ -14,7 +14,7 @@ In this section, we are creating the first `Hello world` program through Node.js
     ``` bash
         > vim app.js
     ```
-* In app.js, press `i` and enter the following codes:
+* In `app.js`, press `i` and enter the following codes:
     ``` js
         console.log('Hello world');
         
