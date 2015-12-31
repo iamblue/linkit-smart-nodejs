@@ -1,19 +1,19 @@
-## 如何更新 firmware
+## How to update firmware
 
-### 透過 WebUI
+### Via WebUI
 
-* 進去您的 WebUI 後，滾到最下頁:
-* 點選 Upgrade firmware:
+* Visit your WebUI, roll to the bottom:
+* Click `Upgrade firmware`:
 * ![](updatefirmware.png)
-* 點擊 choose the file 後，選取要更新的 firmware 檔，即可上傳。
-* 檔案上傳完成後，靜置約 2~3 min。
-* 之後你會在電腦搜尋到 `LinkIt_Smart_7688_XXXXX` 這個 wifi 即表示 firmware 更新成功。
+* Click `choose the file`, select the new firmware file, and upload.
+* After the file upload is complete, wait for about 2 ~ 3 min.
+* After that, you will find in the wifi ID `LinkIt_Smart_7688_XXXXX` . This indicates that firmware update was successful.
 
-[請參照這段影片](https://www.youtube.com/watch?v=U0XGlR8ZirU)
+[Please refer to this video](https://www.youtube.com/watch?v=U0XGlR8ZirU)
 
-### 透過 microUSB + 隨身碟
+### Through microUSB + flash drive
 
-[請參照這段影片](https://www.youtube.com/watch?v=YZ1Zkg7vBqQ)
+[Please refer to this video](https://www.youtube.com/watch?v=YZ1Zkg7vBqQ)
 
 
  
