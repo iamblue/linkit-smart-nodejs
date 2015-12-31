@@ -1,34 +1,34 @@
-## 使用 mraa 套件來操控 GPIO 
+## Use mraa kit to control GPIO 
 
-### 說明
+### Aim
 
-這個章節我們來透過 mraa 來操控GPIO 。
+In this section, we are going to use mraa to control GPIO.
 
-附註：這個範例操控的 LED 燈是版子上的 wifi 那顆。
+Note: The LED lights to be controlled in this example is the same as wifi one on the board.
 
-## 控制 LED (輸出 GPIO 訊息)
+## Controlling LED (outputting GPIO messages)
 
-### 步驟
-* ssh 進去 Linkit smart 7688
-* 產生一個專案
+### Steps
+* ssh into Linkit Smart 7688.
+* Generate a project.
 
     ``` bash
     > mkdir app
     ```
 
-* 用 npm 初始化您的專案
+* Use npm to initialize your project.
     
     ``` bash
     > npm init
     ```
     
-* 產生一個 app.js 檔案
+* Generate an app.’s file.
     
     ``` bash 
     > vim app.js
     ```
     
-* 編輯 app.js 內文
+* Enter the content in app.js.
     
     ``` js
         var m = require('mraa');                                         
@@ -45,7 +45,7 @@
         periodicActivity(); 
     ```
     
-* 就可以看到成果囉!
+* Then, we can see the results!
 
 ![demo](http://iamblue.gitbooks.io/linkit-smart-nodejs/content/images/blink.gif)
 
