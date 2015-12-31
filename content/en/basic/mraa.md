@@ -2,7 +2,7 @@
 
 ### Aim
 
-In this section, we are going to use mraa to control GPIO.
+In this section, we are going to use `mraa` to control GPIO.
 
 Note: The LED lights to be controlled in this example is the same as wifi one on the board.
 
@@ -28,7 +28,7 @@ Note: The LED lights to be controlled in this example is the same as wifi one on
     > vim app.js
     ```
     
-* Enter the content in app.js.
+* Enter the content in `app.js`.
     
     ``` js
         var m = require('mraa');                                         
