@@ -1,5 +1,4 @@
-## 基礎
+## Basics
 
-本大系列章節為如何在 LinkIt smart 7688 版子上跑 Nodejs app 。
-
+This chapter will indroduce how to run Node.js applications on LinkIt Smart 7688 board.
 
