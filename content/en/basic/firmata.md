@@ -1,92 +1,92 @@
-## 使用 firmata 來控制 LED
+## Controlling LED with firmdata
 
-### 說明
+### Aim
 
-#### 注意 : 本章節適用於 LinkIt smart 7688 Duo 版子， LinkIt smart 7688 不可以用哦!
+#### Caution: Methods described in this section only applies to LinkIt smart 7688 Duo. LinkIt smart 7688 is not allowed to use.
 
-前言：LinkIt smart 7688 上面有兩顆晶片，一顆是跑得動 linux 的 MPU ( 7688 )，另外一顆為 Arduino MCU，對於 Nodejs 開發者而言，我們會希望能夠在 MPU 上跑我們的 Nodejs app，透過這個 app 能夠直接控制 Arduino MCU。因此這個章節我們來透過 Nodejs 的 firmata 套件讓 MPU 跟 Arduino MCU 兩邊能夠溝通。
+Preface: LinkIt Smart 7688 has two chips, one is the MPU (7688) capable to run linux; the other one is the Arduino MCU. For Node.js developers, it is desired to run Node.js app on the MPU. Arduino MCU is directly controlled by this app. As as result, we are going to use Node.js firmdata package to communciate between MPU and Arduino MCU.
 
 
-### 須先準備
+### Prerequisites
 
-#### 控制 LED 須準備
+#### Control LED requires
 
 * LED x 1
-* 電阻 x 1
-* 杜邦線數條
+* Resistor x 1
+* A few DuPont wires
 
-#### 請先安裝電路
+#### Please install circuit first:
 
 ![](firmata_bb.jpg)
 
-### 步驟
+### Steps
 
-#### MCU 端
-* 打開你的 Arduino IDE 
-* copy 這網址的內容: https://gist.github.com/edgarsilva/e73c15a019396d6aaef2 
-* 燒錄進去 Arduino  
+#### MCU side
+* Open your Arduino IDE. 
+* Copy contents in this URL: https://gist.github.com/edgarsilva/e73c15a019396d6aaef2 
+* Burn into Arduino  
 
-#### MPU 端
+#### MPU side
 
-* ssh 進去你的 `LinkIt smart 7688 Duo`
+* ssh into your `LinkIt smart 7688 Duo`.
 
-* 產生一個名為 app 的 forlder
+* Generate a folder named ‘app’.
     ``` bash
         > mkdir app && cd app
     ```
     
-* 安裝 firmata
+* Install firmata
 
-    注意！因為 npm 安裝 firmata 套件要做一些 compile 的動作，這會造成LinkIt smart 7688 Duo 執行過久，因此不建議在 LinkIt smart 7688 Duo 版子上使用 `npm install` 方式安裝 firmata 套件。
+    Notice! Because there are some compilation procedures during npm install, which will cause too long running time on LinkIt smart 7688 Duo, it is not recommended to use `npm install` method for firmata package.
     
-    因此我們先在本機端（你的電腦）先產生一個 testfirmata folder
+    So we will first generate a testfirmdata folder on host side (your computer).
     
     ```
         mkdir testfirmata && cd testfirmata
     ```
     
-    接下來執行： 
+    Then execute: 
     
     ```
         npm init 
     ```
     
-    安裝firmata：
+    Install firmata:
     
     ```
         npm install firmata --save
     ```
     
-    因為 firmata 內部引用的一個套件(node-serialport) 在電腦上安裝時會產生你電腦規格的 compile 檔，但是這個套件的mips compile檔已經安裝在我們的 LinkIt smart 7688 Duo 上面，所以我們必須執行把這套件刪除的動作:
+    Because of a dependent package inside firmata, it will generate the compilation spec file according on your computer's spec during installation on your computer. However, the MIPS compilation spec file has already been installed on LinkIt Smart 7688 Duo, so we must erase this package manually:
     ```
         rm -rf ./node_modules/firmata/node_modules/serialport/
     ```
     
-    壓縮 firmata folder：
+    Package firmata folder:
     
     ```
         tar -cvf ./firmata.tar ./node_modules/firmata
     ```
     
-    將壓縮好的檔案傳進你的 LinkIt smart 7688 Duo 版子
+    Transfer the tar file into your `LinkIt smart 7688 Duo` board.
     
     ```
         scp ./firmata.tar root@mylinkit.local:/root/app/node_modules/
     ```
-    (如果出現 can't find node_modules folder 的字眼，請回到你的版子的 /app folder 產生一個 node_modules 的 folder : `mkdir node_modules`)
+    (If something like 'can not find node_modules folder' appears, please return to /app folder on your board and make a folder named 'node_modules': `mkdir node_modules`)
     
-* 回到你的版子的終端機
-* 回到 `/testfirmata` ：
-* 進去 `node_modules` 資料夾： `cd node_modules`
-* 解壓縮 tar 檔：`tar -xvf ./firmata`
-* 回到 `/testfirmata`：`cd ..`
-* 產生一個 app.js 檔案：
+* Go back to your board's terminal.
+* Back to `/testfirmata`:
+* Enter `node_modules` folder: `cd node_modules`
+* Unpack the tar file: `tar -xvf ./firmata`
+* Back to `/testfirmata`：`cd ..`
+* generate a `app.js` file:
     
     ```
         vim app.js
     ```
     
-* 貼上這段內文：
+* Paste the following content:
     ``` js
         console.log('WWW blink start ...');
 
@@ -128,16 +128,16 @@
         });
     ```
     
-* 執行 app.js  
+* Execute `app.js`.  
     ``` 
         node app
         
     ```
-* 按下 ESC 鍵，再輸入 wq! 完成儲存後離開
-* 打開你的 browser :
+* Press `ESC`, then enter `wq!` to save and leave.
+* Open your browser:
 
-    * `http://mylinkit.local?value=high` 為打開 led
-    * `http://mylinkit.local?value=low` 為關掉 led
+    * `http://mylinkit.local?value=high` (led-on)
+    * `http://mylinkit.local?value=low` (led-off)
     
 
         
