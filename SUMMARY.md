@@ -54,6 +54,7 @@
    * [Make a remote tank with LinkIt smart 7688 Duo and MCS gamepad channel](content/en/cloud/gamepad.md)
       * [En](content/en/cloud/gamepad.md)
       * [繁體中文](content/zh-TW/cloud/gamepad.md)
+* [Education](content/en/edu/README.md)
 * [Web of things](content/en/wot/README.md)
    * [En](content/en/wot/README.md)
    * [繁體中文](content/zh-TW/wot/README.md)
