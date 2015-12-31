@@ -6,30 +6,30 @@
 
 ![](pwr.png)
 
-### 步驟
+### Steps
 
-* 打開你的電腦掃描 wifi ap
-* 點選 `Linkit_Smart_7688_XXXXXX`，確定電腦連上這個 LinkIt smart 7688 後，會看到 LinkIt smart 7688 版子上的會開始閃爍橘色的燈。
-* 打開你的 browser ，在 url 中輸入: http://mylinkit.local/
-* 這時就會看到像這樣的畫面:
+* Open your PC and scan WiFi AP.
+* Choose `Linkit_Smart_7688_XXXXXX`,after your PC connected to the LinkIt smart 7688 board, make sure to see the orange light starting to flash on the LinkIt smart 7688 board.
+* Open your browser, type http://mylinkit.local/ in your URL command line.
+* Now you will see the screen like this:
     ![](resetpassword.png)
-* 7688 第一次使用需要設定初始密碼，請在這畫面輸入您想設定的初始密碼。
-* 設定完成會自動到登入頁面:
+* The initial password needs to be set in the first time usage for 7688. Please enter the initial password you want to setup in this screen.
+* After finishing the password setup, it will transfer to the login page automatically.
     ![](login.png)
-* 輸入您剛剛所設定密碼，若成功會跳轉回像這樣的畫面:
+* Enter the password you just typed, if it is correct, it will transfer to the page like this:
     ![](sysinfo.png)
-* 開箱成功!
+* Link successfully!
 
-接下來幾個章節建議建議各位玩家一定閱讀：
+It is strongly suggested to read the following chapters for players.
 
-### 如何 ssh 進 LinkIt smart 7688?
+### How to ssh into LinkIt smart 7688?
 
-[點我閱讀](/)
+[Click to read](/)
 
-### 如何燒錄 Arduino code 進去 LinkIt smart 7688 Duo?
+### How to burn Arduino code into LinkIt smart 7688 Duo?
 
-[點我閱讀](/)
+[Click to read](/)
 
-### 如何設定 wifi 模式( AP mode or Station mode )?
+### How to setup WiFi mode (AP mode or Station mode)?
 
-[點我閱讀](/)
+[Click to read](/)
