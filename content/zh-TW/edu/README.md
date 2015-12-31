@@ -36,7 +36,7 @@
 * 打開你的 Arduino IDE
 * File -> example -> Bridge -> HttpClient
 * 把這個範例燒錄進去
-* 打開 Arduino 監控視窗，看到這畫面即代表成功。
+* 打開 Arduino 監控視窗(放大鏡圖樣) 看到這畫面即代表成功。
 * ![](httpclient.png)
 
-## 完成以上教材準備後，就可以讓學生只專心在 Arduino IDE 上開發物聯網專案。
+## 完成以上教材準備後，就可以讓學生專心在 Arduino IDE 上開發物聯網專案。
