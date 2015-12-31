@@ -7,7 +7,7 @@ We observed that Maker in education can be divided into two groups: one capable 
 * Elementary and junior high schools: LinkIt smart 7688 Duo
 * Senior high schools and universities: LinkIt smart 7688 or LinkIt smart 7688 Duo
 
-This section provide to those who are to provide "elementary and junior high schools' educational resources and textbooks.
+This section provide to those who are to provide "elementary and junior high schools" educational resources and textbooks.
 
 ## Open the Yunbridge on LinkIt smart 7688 Duo
 
