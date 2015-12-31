@@ -1,20 +1,20 @@
-## 如何使用 video streaming 
+## How to use video streaming 
 
-### 說明
+### Aim
 
-這個章節我們來透過 mjpg-streamer 來創建 video streaming 。
+In this section, we are going to create video streaming through mjpg-streamer.
 
-### 須先準備
-* webcam: 建議使用 uvc 規格，本 example 拿 logitech C310 camera 來做基本範例。
+### Prerequisites
+* webcam: uvc specification is recommended. In this example, Logitech C310 camera is taken.
 
 
-### 安裝
-* 確定 linkit smart 7688 已安裝 mjpg-streamer
+### Installation
+* Make sure mjpg-streamer is installed on LinkIt Smart 7688.
 
-### 原理
-* 基本上有安裝完成 mjpg-streamer 即可 work
-* 在 command line 輸入：
+### Work Principle
+* Basically, this would be working if mjpg-streamer is installed.
+* Type the following command in the command line:
 ``` bash
 > mjpg_streamer -i "input_uvc.so -d /dev/video0 -r 640x480 -f 25" -o "output_http.so -p 8080 -w /www/webcam" &
 ```
-* 在您的 browser 中打開 `http://mylinkit.local:8080` 有看到 video 影像即是正常
+* Open `http://mylinkit.local:8080` in your browser. If you see the video, it works properly.
