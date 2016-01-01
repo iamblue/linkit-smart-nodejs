@@ -40,7 +40,7 @@
 * [Emulator](content/en/emulator/README.md)
     * [(中文)](content/zh-TW/emulator/README.md)
 * [Education](content/en/edu/README.md)
-    * [教育](content/zh-TW/edu/README.md)   
+    * [(中文)](content/zh-TW/edu/README.md)   
 * [Web of things](content/en/wot/README.md)
    * [(中文)](content/zh-TW/wot/README.md)
 * [Classic Examples](content/en/example/README.md)
