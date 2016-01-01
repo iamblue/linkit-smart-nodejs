@@ -12,6 +12,10 @@ https://github.com/cfsghost/makerboard
 
 * 首先，先起一台 Ubuntu server (after 14.04 version)
 * 在這台 Server 安裝好 Node.js 4 環境
+* 安裝 Ubuntu 對應套件:
+```
+sudo apt-get install qemu-user-static squashfs-tools
+```
 * 安裝 makerboard: `npm install makerboard -g`
 * 創建 emulator: `makerboard create my7688`
 * 跑出模擬器: `makerboard run my7688`
