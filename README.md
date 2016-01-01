@@ -9,7 +9,7 @@ LinkIt smart 7688 x Nodejs
 
 # Preface
 
-This e-book is suitable for the players who want to develop various kinds of Nodejs applications in Linkit smart 7688 board to read. Besides, in response to the global trend, this e-book will be gradually provided at least in three languages (Traditional Chinese. English.)
+This e-book is suitable for the players who want to develop various kinds of Node.js applications in LinkIt smart 7688 board to read. Besides, in response to the global trend, this e-book will be gradually provided at least in three languages (Traditional Chinese. English.)
 
 
 ### 注意事項
