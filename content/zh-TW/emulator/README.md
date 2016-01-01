@@ -13,8 +13,8 @@ https://github.com/cfsghost/makerboard
 * 首先，先起一台 Ubuntu server (after 14.04 version)
 * 在這台 Server 安裝好 Node.js 4 環境
 * 安裝 makerboard: `npm install makerboard -g`
-* 創建 emulator: `makerboard create mt7688`
-* 跑出模擬器: `makerboard run mt7688`
+* 創建 emulator: `makerboard create my7688`
+* 跑出模擬器: `makerboard run my7688`
 
 注意：若您發現有這個字樣`/bin/sh: Invalid ELF image for this architecture` 因為目前的 Ubuntu qemu core 的版本有小 bug，建議這時做一件事情：
 
@@ -29,5 +29,15 @@ wget https://s3-ap-southeast-1.amazonaws.com/mtk.linkit/qemu-core-static
 ```
 cp qemu-core-static ./my7688/usr/bin/
 ```
+
+最後再 run 一次模擬器:
+
+```
+makerboard run my7688
+```
+
+看到這樣的畫面即代表進去 LinkIt smart 7688 模擬器囉！
+
+![](7688emulator.png)
 
 
