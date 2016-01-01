@@ -30,7 +30,7 @@
       * [(中文) 使用 cylon.js 來控制 LED](content/zh-TW/basic/cylon.md)
    * [How to make your Node.js app start automatically on LinkIt Smart 7688 booting?](content/en/basic/linux_auto_start.md)
       * [(中文) 如何自動一開機時啟動您的 Nodejs App ?](content/zh-TW/basic/linux_auto_start.md)
-* [Easy Integration with Cloud Service (MCS)](content/en/cloud/README.md)
+* [Easy Integration with Cloud Service (MCS) [雲端服務]](content/en/cloud/README.md)
    * [Let MCS control LinkIt smart 7688 by using MCSjs](content/en/cloud/MCSjs.md)
       * [(中文) 使用 MCSjs 讓 MCS 來操控 linkit smart 7688](content/zh-TW/cloud/MCSjs.md)
    * [Use MCS + firmata to control LED](content/en/cloud/mcs_firmata.md)
