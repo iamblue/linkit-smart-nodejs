@@ -13,7 +13,7 @@
       * [(中文)(非必要) 如何 Reset LinkIt smart 7688?](content/zh-TW/intro/reset_7688.md)
    * [(Optional)How to update firmware ?](content/en/intro/update_firmware.md)
       * [(中文)(非必要) 如何更新新的 firmware?](content/zh-TW/intro/update_firmware.md)
-* [Basics](content/en/basic/README.md)
+* [Basics[基礎]](content/en/basic/README.md)
    * [Running your first 'Hello World' program on LinkIt Smart 7688](content/en/basic/helloworld.md)
       * [(中文) 在 LinkIt smart 7688 上 run 第一隻 Hello world 程式](content/zh-TW/basic/helloworld.md)
    * [Installation Node.js suite on LinkIt smart 7688](content/en/basic/npm.md)
