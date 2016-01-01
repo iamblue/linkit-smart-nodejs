@@ -37,6 +37,8 @@
       * [(中文) 使用 MCS + firmata 控制 LED](content/zh-TW/cloud/mcs_firmata.md)
    * [Make a remote tank with LinkIt smart 7688 Duo and MCS gamepad channel](content/en/cloud/gamepad.md)
       * [(中文) 使用 LinkIt smart 7688 Duo 搭配 MCS gamepad channel 製作遙控戰車](content/zh-TW/cloud/gamepad.md)
+* [Emulator](content/en/edu/README.md)
+    * [模擬器](content/zh-TW/edu/README.md)
 * [Education](content/en/edu/README.md)
     * [教育](content/zh-TW/edu/README.md)   
 * [Web of things](content/en/wot/README.md)
