@@ -20,7 +20,7 @@ sudo apt-get install qemu-user-static squashfs-tools
 * 創建 emulator: `makerboard create my7688`
 * 跑出模擬器: `makerboard run my7688`
 
-注意：若您發現有這個字樣`/bin/sh: Invalid ELF image for this architecture` 因為目前的 Ubuntu qemu core 的版本有小 bug，建議這時做一件事情：
+注意：若您發現有這個字樣`/bin/sh: Invalid ELF image for this architecture` 因為目前的 Ubuntu qemu core 的版本有 bug，建議這時做一件事情：
 
 * 下載 qemu-core-static for ubuntu 14.04
 
