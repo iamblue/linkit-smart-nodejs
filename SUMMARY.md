@@ -18,7 +18,7 @@
       * [(中文) 在 LinkIt smart 7688 上 run 第一隻 Hello world 程式](content/zh-TW/basic/helloworld.md)
    * [Installation Node.js suite on LinkIt smart 7688](content/en/basic/npm.md)
       * [(中文) 在 LinkIt smart 7688 上安裝 Nodejs 套件](content/zh-TW/basic/npm.md)
-   * [Use mraa kit to control GPIO](content/en/basic/mraa.md)
+   * [Use mraa to control GPIO](content/en/basic/mraa.md)
       * [(中文) 使用 mraa 來操控 GPIO](content/zh-TW/basic/mraa.md)
    * [Open files on microSD](content/en/basic/open_file.md)
       * [(中文) 打開 microSD 上的檔案](content/zh-TW/basic/open_file.md)
