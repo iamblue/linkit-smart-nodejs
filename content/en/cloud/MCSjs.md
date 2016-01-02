@@ -23,23 +23,24 @@ Note: After the test device is created in MCS,  we need the deivceId and deviceK
         vim app.js
     ```
 * input the content:
-    ```
-        var mcs = require('mcsjs');
-        
-        var myApp = mcs.register({
-            deviceId: 'Input your deviceId',
-            deviceKey: 'Input your deviceKey',
-        });
-        // Input the deviceId and deviceKey mentioned above.
-        
-        myApp.on('LED_control', function(data, time) {
-            if(Number(data) === 1){                     
-                console.log('blink');
-            } else {
-                console.log('off');
-            }
-        }); 
-    ```
+
+``` js
+var mcs = require('mcsjs');
+
+var myApp = mcs.register({
+    deviceId: 'Input your deviceId',
+    deviceKey: 'Input your deviceKey',
+});
+// Input the deviceId and deviceKey mentioned above.
+
+myApp.on('LED_control', function(data, time) {
+    if(Number(data) === 1){                     
+        console.log('blink');
+    } else {
+        console.log('off');
+    }
+}); 
+```
 * Save and run node app
 * Go back to MCS screen, and press the switch button on the data channel below.
     ![](螢幕快照 2015-09-03 下午3.01.14.png)
