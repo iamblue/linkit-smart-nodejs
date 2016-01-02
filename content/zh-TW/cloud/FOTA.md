@@ -1,5 +1,8 @@
 ## FOTA
 
+FOTA 全名是 Firmware Over The Air.
+以下為簡單 Demo，透過 MCS 介面空中更新 firmware 給LinkIt smart 7688 Duo 的 Arduino，第一次按下 Push 鈕為『更新每 1s 閃爍一次』第二次按下 Push 鈕為『更新每 100ms 閃爍一次』：
+
 {% youtube %}https://www.youtube.com/watch?v=njv5SzlUkMI {% endyoutube %}
 
 ### 如何從 Arduino IDE build 出 hex 檔 for Arduino chip?
