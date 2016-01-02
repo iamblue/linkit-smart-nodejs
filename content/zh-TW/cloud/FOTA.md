@@ -20,10 +20,13 @@ FOTA 使用場合非常廣泛，可以透過 MCS FOTA 一次同時把你手上�
 
 ### 在 LinkIt smart 7688 所需要的準備。
 * ssh 進去 LinkIt smart 7688 
-* create new folder 
-* npm init
-* npm install mcsjs
-* copy this code:
+* create new folder: `mkdir app && cd app` 
+* 初始化npm: `npm init`
+* 分別安裝以下套件: 
+    - `npm install mcsjs`
+    - `npm install superagent`
+* 創建 app.js: `vim app.js`
+* copy this code 以及存擋:
 
 ```js
 var mcs = require('mcsjs');
@@ -76,8 +79,8 @@ myApp.on('FOTA', function(data, time) {
   });
 });
 ```
-
-* 若您希望每次開機時啟動這段 code 
+* 啟動 app.js : `node app.js`
+* 若您希望每次開機時啟動這段 code 請[參考此篇](https://iamblue.gitbooks.io/linkit-smart-nodejs/content/zh-TW/basic/linux_auto_start.html) 
 
 ### 如何利用 MCSjs 利用 FOTA 更新 Arduino?
 
