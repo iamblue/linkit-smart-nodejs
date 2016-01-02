@@ -47,9 +47,9 @@ myApp.on('LED_control', function(data, time) {
     ![](螢幕快照 2015-09-03 下午3.01.14.png)
     ![](螢幕快照 2015-09-03 下午3.03.10.png)
 * 在切回 command line ，你就會看到
-    ```
-        blink!
-    ```
+```
+    blink!
+```
 * 完成這以上步驟即代表你的 LinkIt smart 7688 已成功跟 MCS 完成對話串接。
 
 ### 下個章節我們來實作如何透過 MCS <-> LinkIt smart 7688 <-> LED (藉由 firmata 套件) 來實際控制真實的 LED 燈。
