@@ -9,4 +9,7 @@
 ![](fota01.png)
 * 點選firmare
 ![](fota02.png)
-* 
+* 點選 Add firmware，打入以下資料:
+![](fota03.png)
+![](fota04.png)
+![](fota05.png)
