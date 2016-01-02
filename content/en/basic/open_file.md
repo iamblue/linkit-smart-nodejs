@@ -17,17 +17,18 @@ In this section, we are going to read files in the microSD within LinkIt Smart 7
         > vim app.js
     ```
 * Press `i` and edit `app.js`:
-    ``` js
-        var fs = require('fs');
-        // **** Remarks ****
-        // 1. The following SD-P1 stands for read first partitions in SD card.
-        // 2. On Linkit Smart, all files will be found in /Media folder no matter whether you pick usb host or SD card.
-        fs.readdir('/Media/SD-P1', function (err, data) {
-            if (err) throw err;
-            console.log(data);
-        });
+
+``` js
+var fs = require('fs');
+// **** Remarks ****
+// 1. The following SD-P1 stands for read first partitions in SD card.
+// 2. On Linkit Smart, all files will be found in /Media folder no matter whether you pick usb host or SD card.
+fs.readdir('/Media/SD-P1', function (err, data) {
+    if (err) throw err;
+    console.log(data);
+});
         
-    ```
+```
     
 * Press `ESC`, then enter `wq!` to save and leave.
 * Enter `node app.js`, and the results can be seen! 
