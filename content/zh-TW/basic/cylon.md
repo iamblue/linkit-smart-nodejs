@@ -52,24 +52,26 @@
         vim app.js
     ```
 * 按下 i 鍵後撰寫寫：
-    ``` js
-        var Cylon = require('cylon');
 
-        Cylon.robot({
-            connections: {
-                arduino: { adaptor: 'firmata', port: '/dev/ttyS0' }
-            },
+``` js
+var Cylon = require('cylon');
 
-            devices: {
-                led: { driver: 'led', pin: 13 }
-            },
+Cylon.robot({
+    connections: {
+        arduino: { adaptor: 'firmata', port: '/dev/ttyS0' }
+    },
 
-            work: function(my) {
-                every((1).second(), my.led.toggle);
-            }
-        }).start();
+    devices: {
+        led: { driver: 'led', pin: 13 }
+    },
+
+    work: function(my) {
+        every((1).second(), my.led.toggle);
+    }
+}).start();
         
-    ```
+```
+
 * 按下 ESC 鍵，再輸入 `wq!` 完成儲存後離開。
 * 輸入 node app.js 即可看到在版子上看到燈號閃爍中。
 * 完成!
