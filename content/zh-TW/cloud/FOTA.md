@@ -22,6 +22,7 @@ FOTA 全名是 Firmware Over The Air.
 * npm init
 * npm install mcsjs
 * copy this code:
+
 * 若您希望每次開機時啟動這段 code 
 
 ### 如何利用 MCSjs 利用 FOTA 更新 Arduino?
