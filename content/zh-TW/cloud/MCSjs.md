@@ -11,35 +11,37 @@
 * 確定跟你的 linkit smart 7688 連線
 * ssh 進去
 * 創建一個資料夾並進去:
-    ``` 
-        mkdir app && cd app && npm init
-    ```
+``` 
+    mkdir app && cd app && npm init
+```
 * 安裝 MCSjs modules:
-    ``` 
-        npm install mcsjs
-    ```
+``` 
+    npm install mcsjs
+```
 * 編輯 app.js:
-    ```
-        vim app.js
-    ```
+```
+    vim app.js
+```
 * 輸入:
-    ```
-        var mcs = require('mcsjs');
-        
-        var myApp = mcs.register({
-            deviceId: 'Input your deviceId',
-            deviceKey: 'Input your deviceKey',
-        });
-        // 這邊輸入上述打的 deviceId 跟 deviceKey
-        
-        myApp.on('LED_control', function(data, time) {
-            if(Number(data) === 1){                     
-                console.log('blink');
-            } else {
-                console.log('off');
-            }
-        }); 
-    ```
+
+``` js
+var mcs = require('mcsjs');
+
+var myApp = mcs.register({
+  deviceId: 'Input your deviceId',
+  deviceKey: 'Input your deviceKey',
+});
+// 這邊輸入上述打的 deviceId 跟 deviceKey
+
+myApp.on('LED_control', function(data, time) {
+  if(Number(data) === 1){
+    console.log('blink');
+  } else {
+    console.log('off');
+  }
+});
+```
+
 * 存檔成功後執行 node app
 * 這時候回到 MCS 畫面，按下這個 data channel 的 switch按鈕。 
     ![](螢幕快照 2015-09-03 下午3.01.14.png)
