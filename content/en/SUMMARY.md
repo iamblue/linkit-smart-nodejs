@@ -20,7 +20,7 @@
    * [Let MCS control LinkIt smart 7688 by using MCSjs](cloud/MCSjs.md)
    * [Use MCS + firmata to control LED](cloud/mcs_firmata.md)
    * [Uploading data point to MCS](cloud/uploadHeartRate.md)
-   * [Use MCS FOTA to upgrade Arduino firmware](cloud/mcs_firmata.md)
+   * [Use MCS FOTA to upgrade Arduino firmware](cloud/FOTA.md)
    * [Make a remote tank with LinkIt smart 7688 Duo and MCS gamepad channel](cloud/gamepad.md)
 * [Emulator](emulator/README.md)
 * [Education](edu/README.md)
