@@ -1,6 +1,6 @@
 # Summary
 
-* [介紹](content/en/intro/README.md)
+* [介紹](intro/README.md)
    * [LinkIt smart 7688 規格](intro/spec.md)
    * [開箱設定](intro/getting_start.md)
    * [如何設定網路?](intro/setting_wifi.md)
