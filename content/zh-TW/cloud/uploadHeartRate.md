@@ -28,7 +28,7 @@
 #include <Wire.h>
 void setup() {
   Serial.begin(9600);
-  Serial1.begin(57600); // communicate with MT7688
+  Serial1.begin(57600); // important! communicate with MT7688
   Serial.println("heart rate sensor:");
   Wire.begin();
 }
