@@ -30,20 +30,20 @@ Note: The LED lights to be controlled in this example is the same as wifi one on
     
 * Enter the content in `app.js`.
     
-    ``` js
-        var m = require('mraa');                                         
-        var ledState = true;   
-        var myLed = new m.Gpio(44);
-        
-        myLed.dir(m.DIR_OUT);                         
-                                              
-        function periodicActivity() {
-            myLed.write(ledState ? 1 : 0);
-            ledState = !ledState;        
-            setTimeout(periodicActivity, 1000);
-        }                                         
-        periodicActivity(); 
-    ```
+``` js
+var m = require('mraa');
+var ledState = true;
+var myLed = new m.Gpio(44);
+
+myLed.dir(m.DIR_OUT);
+
+function periodicActivity() {
+    myLed.write(ledState ? 1 : 0);
+    ledState = !ledState;
+    setTimeout(periodicActivity, 1000);
+}
+periodicActivity();
+```
     
 * Then, we can see the results!
 
