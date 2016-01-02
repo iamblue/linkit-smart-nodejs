@@ -7,6 +7,10 @@ FOTA 全名是 Firmware Over The Air.
 
 ### 如何從 Arduino IDE build 出 hex 檔 for Arduino chip?
 
+* 準備好您寫好的 Arduino code
+![](fota_arduino01.png)
+![](fota_arduino02.png)
+![](fota_arduino03.png)
 
 
 ### 在 LinkIt smart 7688 所需要的準備。
