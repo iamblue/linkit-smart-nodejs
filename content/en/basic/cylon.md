@@ -52,24 +52,24 @@ In this section, we are going to use the famous open source project `Cylon.js` o
         vim app.js
     ```
 * After pressing the `i` key, enter:
-    ``` js
-        var Cylon = require('cylon');
+``` js
+var Cylon = require('cylon');
 
-        Cylon.robot({
-            connections: {
-                arduino: { adaptor: 'firmata', port: '/dev/ttyS0' }
-            },
+Cylon.robot({
+    connections: {
+        arduino: { adaptor: 'firmata', port: '/dev/ttyS0' }
+    },
 
-            devices: {
-                led: { driver: 'led', pin: 13 }
-            },
+    devices: {
+        led: { driver: 'led', pin: 13 }
+    },
 
-            work: function(my) {
-                every((1).second(), my.led.toggle);
-            }
-        }).start();
+    work: function(my) {
+        every((1).second(), my.led.toggle);
+    }
+}).start();
         
-    ```
+```
 * Press `ESC`, then enter `wq!` to save and leave.
 * Enter `node app.js` to see see lights on the board flashing.
 * Done!
