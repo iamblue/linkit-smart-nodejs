@@ -12,15 +12,15 @@
 * ssh 進去 Linkit smart 7688
 * 產生一個專案
 
-    ``` bash
-    > mkdir app
-    ```
+``` bash
+> mkdir app
+```
 
 * 用 npm 初始化您的專案
     
 ``` bash
-    > npm init
-    ```
+> npm init
+```
     
 * 產生一個 app.js 檔案
     
