@@ -69,7 +69,7 @@ var myApp = mcs.register({
 serialPort.on("open", function () {
   serialPort.on('data', function(data) {
     // Receive data from Arduino chip (32U4)
-    myApp.emit('heartrate','', data);
+    myApp.emit('heartrate','', data); // upload to MCS
   });
 });
 
