@@ -51,27 +51,28 @@ The four pins of L298N are connected to D2, D3, D4, D5 of Linkit smart 7688 Duo.
         vim app.js
     ```
 * Input the following content: (Check this for details: https://gist.github.com/iamblue/27d79a58827093f4442c)
-    ``` js
-        var mcs = require('mcsjs');
 
-        // regist your device to mcs.
-        var myApp = mcs.register({
-            deviceId: 'Input your deviceId',   // Input your deviceId.
-            deviceKey: 'Input your deviceKey', // Input your deviceKey.
-        });
+``` js
+var mcs = require('mcsjs');
 
-        var SerialPort = require("serialport").SerialPort;
-        var serialPort = new SerialPort("/dev/ttyS0", {
-            baudrate: 57600
-        });
+// regist your device to mcs.
+var myApp = mcs.register({
+    deviceId: 'Input your deviceId',   // Input your deviceId.
+    deviceKey: 'Input your deviceKey', // Input your deviceKey.
+});
 
-        // communicate with Arduino chip (32U4).
-        serialPort.on("open", function () {
-            // listen the mcs command.
-            myApp.on('gamepad', function(data, time) { // gamepad is your datachannel.
-                serialPort.write(data); // send message to Arduino chip.
-            });
-        });
+var SerialPort = require("serialport").SerialPort;
+var serialPort = new SerialPort("/dev/ttyS0", {
+    baudrate: 57600
+});
+
+// communicate with Arduino chip (32U4).
+serialPort.on("open", function () {
+    // listen the mcs command.
+    myApp.on('gamepad', function(data, time) { // gamepad is your datachannel.
+        serialPort.write(data); // send message to Arduino chip.
+    });
+});
 ```
 
 * Save and run node app (Don’t close command line window)
