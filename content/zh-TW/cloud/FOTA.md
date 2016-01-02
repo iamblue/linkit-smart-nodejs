@@ -29,4 +29,4 @@
 * 進去您產生好的 Test device 頁面
 * 點選 firmware :
 ![](fota06.png)
-* 若您的 Device 已在線上，這個 Push 按鈕就會變成藍色，點擊後就可以進行 FOTA 推送新的 firmware 給 7688。
+* 若您的 Device 已在線上，這個 Push 按鈕就會變成藍色，點擊後就可以進行 FOTA 推送新的 firmware 給 7688 囉。
