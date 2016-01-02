@@ -11,7 +11,7 @@ FOTA 全名是 Firmware Over The Air.
 ![](fota_arduino01.png)
 * 點選草稿碼:
 ![](fota_arduino02.png)
-* 點選 `Export compiled Binary`，之後就會產生出這一個 hex:
+* 點選 `Export compiled Binary`，之後就會產生出這一個 `.hex`:
 ![](fota_arduino03.png)
 
 
