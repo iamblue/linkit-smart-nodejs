@@ -14,6 +14,8 @@ FOTA 全名是 Firmware Over The Air.
 * 點選 `Export compiled Binary`，之後就會產生出這一個 `.hex`:
 ![](fota_arduino03.png)
 
+這個 `.hex` 的檔案就是等等要上傳到 MCS 的 firmware.
+
 ### 在 LinkIt smart 7688 所需要的準備。
 * ssh 進去 LinkIt smart 7688 
 * create new folder 
