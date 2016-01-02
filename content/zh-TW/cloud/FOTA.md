@@ -1,6 +1,7 @@
 ## FOTA
 
-FOTA 全名是 Firmware Over The Air.
+FOTA 全名是 Firmware Over The Air. FOTA 使用場合非常廣泛，可以透過 MCS FOTA 一次同時把你手上的設備更新至您最新的韌體。
+
 以下為簡單 Demo，透過 MCS 介面空中更新 firmware 給LinkIt smart 7688 Duo 的 Arduino，第一次按下 Push 鈕為『更新每 1s 閃爍一次』第二次按下 Push 鈕為『更新每 100ms 閃爍一次』：
 
 {% youtube %}https://www.youtube.com/watch?v=njv5SzlUkMI {% endyoutube %}
