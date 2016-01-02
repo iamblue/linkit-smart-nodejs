@@ -20,7 +20,7 @@
    * [使用 MCSjs 讓 MCS 來操控 linkit smart 7688](cloud/MCSjs.md)
    * [使用 MCS + firmata 控制 LED](cloud/mcs_firmata.md)
    * [上傳資料到 MCS](cloud/uploadHeartRate.md)
-   * [使用 MCS FOTA 去更新 Arduino 韌體](cloud/mcs_firmata.md)
+   * [使用 MCS FOTA 去更新 Arduino 韌體](cloud/FOTA.md)
    * [使用 LinkIt smart 7688 Duo 搭配 MCS gamepad channel 製作遙控戰車](cloud/gamepad.md)
 * [模擬器](emulator/README.md)
 * [教育](edu/README.md)
