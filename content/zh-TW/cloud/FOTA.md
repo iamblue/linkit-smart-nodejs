@@ -1,4 +1,4 @@
-## FOTA
+## 使用 MCS FOTA 去更新 Arduino 韌體
 
 FOTA 全名是 Firmware Over The Air. 
 FOTA 使用場合非常廣泛，可以透過 MCS FOTA 一次同時把你手上眾多設備更新至您最新的韌體。
