@@ -7,6 +7,8 @@ FOTA 全名是 Firmware Over The Air.
 
 ### 如何從 Arduino IDE build 出 hex 檔 for Arduino chip?
 
+
+
 ### 在 LinkIt smart 7688 所需要的準備。
 * ssh 進去 LinkIt smart 7688 
 * create new folder 
