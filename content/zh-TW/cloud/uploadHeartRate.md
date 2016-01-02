@@ -10,7 +10,7 @@
 用 LinkIt smart 7688 Duo 接上 Heart Rate sensor ，來實作 MPU(MT7688) chip 如何從 MCU chip (Arduino 32U4) 接收資料後上傳到 MCS  
 
 ### 架構
-在Arduino (MCU) 埋一個 57600 的Serial print傳送給 MPU，MPU端透過 node-serialport 接收資料後再透過 mcsjs 上傳到 MCS 去。
+在 Arduino (MCU) 埋一個 57600 的 Serial print 傳送給 MPU，MPU端透過 node-serialport 接收資料後再透過 mcsjs 上傳到 MCS 去。
 
 
 ### 在 MCS 網站上設定好device
