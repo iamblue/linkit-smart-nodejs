@@ -23,6 +23,64 @@ FOTA 全名是 Firmware Over The Air.
 * npm install mcsjs
 * copy this code:
 
+```js
+var mcs = require('mcsjs');
+var spawn = require('child_process').spawn;
+var fs = require('fs');
+var request = require('superagent');
+var fwName = 'fw.hex';
+
+var myApp = mcs.register({
+  deviceId: 'Dl7MESWf',
+  deviceKey: 'm7dcQ5BHAld83X1e',
+});
+
+var download = function(url, dest, cb) {
+  var file = fs.createWriteStream(dest);
+  var sendReq = request.get(url);
+
+  // verify response code
+  sendReq.on('response', function(response) {
+    if (response.statusCode !== 200) {
+      return cb('Response status was ' + response.statusCode);
+    }
+  });
+
+  // check for request errors
+  sendReq.on('error', function (err) {
+    fs.unlink(dest);
+
+    if (cb) {
+      return cb(err.message);
+    }
+  });
+  sendReq.pipe(file);                                                   
+                                                                        
+  file.on('finish', function() {                                              
+    file.close(cb);  // close() is async, call cb after close completes.      
+  });                                                                         
+                                                                              
+  file.on('error', function(err) { // Handle errors                           
+    fs.unlink(dest); // Delete the file async. (But we don't check the result)
+                                                                              
+    if (cb) {                                                                 
+      return cb(err.message);                                                 
+    }                                                                         
+  });                                                                         
+};                                                                            
+                                                                              
+myApp.on('FOTA', function(data, time) {                                                                                                  
+  console.log(data);                                                                                                                     
+  var Data = data.split(',');                                                                                                            
+  var firmwareUrl = Data[2];                                                                                                             
+  download(firmwareUrl, fwName, function(){                                                                                              
+    var update = spawn('avrdude', ['-p', 'm32u4', '-c', 'linuxgpio', '-v', '-e', '-U', 'flash:w:/root/'+ fwName, '-U', 'lock:w:0x0f:m']);
+    update.stdout.on('data', function(data) { console.log(data) });                                                                      
+    update.stderr.on('data', function(data) { console.log(data.toString()) });                                                           
+  });
+});
+```
+
 * 若您希望每次開機時啟動這段 code 
 
 ### 如何利用 MCSjs 利用 FOTA 更新 Arduino?
