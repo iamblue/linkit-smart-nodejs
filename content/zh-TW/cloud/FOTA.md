@@ -31,8 +31,8 @@ var request = require('superagent');
 var fwName = 'fw.hex';
 
 var myApp = mcs.register({
-  deviceId: 'Dl7MESWf',
-  deviceKey: 'm7dcQ5BHAld83X1e',
+  deviceId: 'Input your deviceID',
+  deviceKey: 'Input your deviceKey',
 });
 
 var download = function(url, dest, cb) {
