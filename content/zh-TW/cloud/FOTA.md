@@ -80,7 +80,7 @@ myApp.on('FOTA', function(data, time) {
 });
 ```
 * 啟動 app.js : `node app.js`
-* 若您希望每次開機時啟動這段 code 請[參考此篇](https://iamblue.gitbooks.io/linkit-smart-nodejs/content/zh-TW/basic/linux_auto_start.html) 
+* 若您希望每次開機時啟動這段 code 請[參考此篇](https://iamblue.gitbooks.io/linkit-smart-nodejs/content/zh-TW/basic/linux_auto_start.html)把 `node /root/app/app.js` 放進啟動清單內。
 
 ### 如何利用 MCSjs 利用 FOTA 更新 Arduino?
 
