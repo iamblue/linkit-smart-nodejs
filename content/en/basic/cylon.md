@@ -52,6 +52,7 @@ In this section, we are going to use the famous open source project `Cylon.js` o
         vim app.js
     ```
 * After pressing the `i` key, enter:
+
 ``` js
 var Cylon = require('cylon');
 
