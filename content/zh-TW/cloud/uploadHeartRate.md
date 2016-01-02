@@ -1,6 +1,8 @@
 ## 上傳資料到 MCS (以手指心跳感應器為例)
 
-本篇適用於 LinkIt smart 7688 Duo
+
+![](heartrate.png)
+本篇適用於 LinkIt smart 7688 Duo.
 
 
 ### 簡述
@@ -11,7 +13,14 @@
 在Arduino (MCU) 埋一個 57600 的Serial print傳送給 MPU，MPU端透過 node-serialport 接收資料後再透過 mcsjs 上傳到 MCS 去。
 
 
-### MCU 端燒錄的 code
+### 在 MCS 網站上設定好device
+
+* create new protoype.
+* 創建 display datachannel -> 資料形式 為 float -> datachannel ID 為 `heartrate`
+* create test device.
+* 在 test device 這頁上會看到 deviceID 跟 deviceKey.
+
+### MCU 端要做的事情
 
 請將下列的 code 燒錄進 MCU: 注意關鍵在 `Serial1.begin(57600)`:
 
@@ -35,15 +44,14 @@ void loop() {
 
 ```
 
-
-### MPU 端
+### MPU 端要做的事情
 
 * ssh 進去 Duo
 * mkdir app && cd app
 * npm init
 * npm install mcsjs
 * vim app.js
-* copy: 
+* copy this code 和存檔: 
 
 ```js
 var mcs = require('mcsjs');
@@ -66,4 +74,7 @@ serialPort.on("open", function () {
 });
 
 ```
+
+* 執行 `node app`
+* 接下來就可以看到成果囉！
 
