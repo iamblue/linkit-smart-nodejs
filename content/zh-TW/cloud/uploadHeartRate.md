@@ -46,12 +46,12 @@ void loop() {
 
 ### MPU 端要做的事情
 
-* ssh 進去 Duo
-* mkdir app && cd app
-* npm init
-* npm install mcsjs
-* vim app.js
-* copy this code 和存檔: 
+* ssh 進去 Duo.
+* 創建資料夾: `mkdir app && cd app`
+* npm 初始化: `npm init`
+* 安裝 mcsjs : `npm install mcsjs`
+* 創建 app.js: `vim app.js`
+* copy following code 和存檔: 
 
 ```js
 var mcs = require('mcsjs');
