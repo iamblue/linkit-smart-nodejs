@@ -17,7 +17,7 @@ Please refer to this video:
 
 Please refer to this video:
 
-https://www.youtube.com/watch?v=YZ1Zkg7vBqQ)
+{% youtube %}https://www.youtube.com/watch?v=YZ1Zkg7vBqQ {% endyoutube %}
 
 
  
