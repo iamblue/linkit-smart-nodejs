@@ -1,8 +1,8 @@
 ## 上傳資料到 MCS (以手指心跳感應器為例)
 
-
 ![](heartrate.png)
-本篇適用於 LinkIt smart 7688 Duo.
+
+##本篇適用於 LinkIt smart 7688 Duo.
 
 
 ### 簡述
