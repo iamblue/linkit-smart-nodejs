@@ -18,15 +18,15 @@
 
 * 用 npm 初始化您的專案
     
-    ``` bash
+``` bash
     > npm init
     ```
     
 * 產生一個 app.js 檔案
     
-    ``` bash 
-    > vim app.js
-    ```
+``` bash 
+> vim app.js
+```
     
 * 編輯 app.js 內文
     
