@@ -41,6 +41,7 @@ myApp.on('LED_control', function(data, time) {
     }
 }); 
 ```
+
 * Save and run node app
 * Go back to MCS screen, and press the switch button on the data channel below.
     ![](螢幕快照 2015-09-03 下午3.01.14.png)
