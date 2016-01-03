@@ -7,7 +7,7 @@
    * [How to ssh into LinkIt smart 7688?](en/intro/ssh_7688.md)
    * [(Optional)How to reset linkIt smart 7688](en/intro/reset_7688.md)
    * [(Optional)How to update firmware ?](en/intro/update_firmware.md)
-* [Basics[基礎]](en/basic/README.md)
+* [Basics](en/basic/README.md)
    * [Running your first 'Hello World' program on LinkIt Smart 7688](en/basic/helloworld.md)
    * [Installation Node.js suite on LinkIt smart 7688](en/basic/npm.md)
    * [Use mraa to control GPIO](en/basic/mraa.md)
