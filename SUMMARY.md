@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction[介紹]](en/intro/README.md)
+* [Introduction](en/intro/README.md)
    * [LinkIt smart 7688 Spec](en/intro/spec.md)
    * [Initial Setup](en/intro/getting_start.md)
    * [How to setup WiFi mode?](en/intro/setting_wifi.md)
