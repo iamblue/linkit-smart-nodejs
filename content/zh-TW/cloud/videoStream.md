@@ -1,6 +1,13 @@
 #使用 MCS 來看視訊串流
 
 本篇 LinkIt smart 7688 , LinkIt smart 7688 Duo 皆可以適用.
+
+## 準備事項
+
+* 先準備好一條 usb OTG 線
+* 準備好您的 web camera ( 本篇範例是使用羅技 C310)
+* 將電源線插入PWR, web camera 插入 usb OTG 在插入 7688 上的 HOST 。
+
 ## 在 MCS 上要做的事情
 
 * 進去 prototype 詳情頁面，點擊 `Add Data Channel now`:
