@@ -11,7 +11,7 @@
 ![](videostream_prototype03.png)
 * 回到 prototype 詳情頁面，點選 `create test device`:
 ![](videostream_prototype04.png)
-* 進去本頁面後，就可以看到 deviceId, deviceKey:
+* 進去本頁面後，就可以看到 `deviceId`, `deviceKey`:
 ![](videostream_prototype05.png)
 
 
