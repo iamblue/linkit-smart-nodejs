@@ -29,5 +29,5 @@
 * ssh 進去您的 7688:
 * 輸入以下指令: (`deviceId`, `deviceKey`, `dataChnId` 即為上述拿到的代號)
 ```
-ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://52.76.74.57:8082/{deviceId}/{deviceKey}/{dataChnId}/{deviceKey}/176/144
+ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://52.76.74.57:8082/{deviceId}/{deviceKey}/{dataChnId}/176/144
 ```
