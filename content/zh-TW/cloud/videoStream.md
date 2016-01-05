@@ -9,7 +9,7 @@
 ![](videostream_prototype02.png)
 * Data type 選擇 Video Stream，其他空格按照您的需求輸入:
 ![](videostream_prototype03.png)
-* 回到 prototype 詳情頁面
+* 回到 prototype 詳情頁面:
 ![](videostream_prototype04.png)
 ![](videostream_prototype05.png)
 
