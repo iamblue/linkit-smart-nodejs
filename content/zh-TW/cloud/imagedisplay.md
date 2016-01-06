@@ -52,5 +52,4 @@ vim app.js
 
 ```
 
-
 * 返回你的 MCS 的 test device 那頁就可以看到成果囉!
