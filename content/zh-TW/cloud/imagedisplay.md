@@ -19,9 +19,10 @@
 * Data type 選擇 image，其他空格按照您的需求輸入，注意這時候打的 data channel id 就是等一下會用到的 `dataChnId` :
 ![](imagedisplay03.png)
 * 回到 prototype 詳情頁面，點選 `create test device`:
+![](imagedisplay04.png)
 ![](imagedisplay05.png)
 * 進去 device 頁面後，就可以看到 `deviceId`, `deviceKey`:
-![](imagedisplay04.png)
+![](imagedisplay06.png)
 
 
 ## 在 Device 端要做的事情
