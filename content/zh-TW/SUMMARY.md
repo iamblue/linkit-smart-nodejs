@@ -22,6 +22,7 @@
    * [上傳資料到 MCS](cloud/uploadHeartRate.md)
    * [使用 MCS FOTA 去更新 Arduino 韌體](cloud/FOTA.md)
    * [使用 MCS 來看視訊串流](cloud/videoStream.md)
+   * [上傳圖片到 MCS](cloud/imagedisplay.md)
    * [使用 LinkIt smart 7688 Duo 搭配 MCS gamepad channel 製作遙控戰車](cloud/gamepad.md)
 * [模擬器](emulator/README.md)
 * [教育](edu/README.md)
