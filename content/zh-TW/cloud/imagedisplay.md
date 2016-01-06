@@ -41,6 +41,9 @@ fswebcam  -i 0 -d v4l2:/dev/video0  --no-banner  --jpeg 95  --save test.jpg
 ```
 之後你就會看到你的根目錄下面有一個 test.jpg 的檔案。
 
+###注意
+
+
 * 編輯 app.js
 
 ```
