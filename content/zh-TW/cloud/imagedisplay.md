@@ -28,7 +28,29 @@
 ## 在 Device 端要做的事情
 
 * ssh 進去您的 7688:
-* 輸入以下指令: (`deviceId`, `deviceKey`, `dataChnId` 即為上述拿到的代號)
+* 安裝 `fswebcam`:
+
 ```
-ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://52.76.74.57:8082/{deviceId}/{deviceKey}/{dataChnId}/176/144
+opkg update
+opkg install fswebcam
 ```
+* 測試是否能拍一張照片:
+
+```
+fswebcam  -i 0 -d v4l2:/dev/video0  --no-banner  --jpeg 95  --save test.jpg
+```
+之後你就會看到你的根目錄下面有一個 test.jpg 的檔案。
+
+* 編輯 app.js
+
+```
+vim app.js
+```
+* 將這段 code copy 進去:
+
+``` js
+
+```
+
+
+* 返回你的 MCS 的 test device 那頁就可以看到成果囉!
