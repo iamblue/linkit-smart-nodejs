@@ -80,19 +80,6 @@ child = exec('fswebcam -i 0 -d v4l2:/dev/video0 --no-banner -p YUYV --jpeg 95 --
     });
 });
 
-        child = exec('fswebcam -i 0 -d v4l2:/dev/video0 --no-banner -p YUYV --jpeg 95 --save /tmp/test.jpg',
-      function (error, stdout, stderr) {
-        console.log('stdout: ' + stdout);
-        console.log('stderr: ' + stderr);
-        if (error !== null) {
-          console.log('exec error: ' + error);
-        }
-        fs.readFileAsync('/tmp/test.jpg')
-        .then(function(data) {
-           myApp.emit('album01','', new Buffer(data).toString('base64'));
-        });
-     });
-
 ```
 
 * 返回你的 MCS 的 test device 那頁就可以看到成果囉!
