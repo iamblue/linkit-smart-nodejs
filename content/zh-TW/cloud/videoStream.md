@@ -38,3 +38,4 @@ opkg install ffmpeg
 ```
 ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://52.76.74.57:8082/{deviceId}/{deviceKey}/{dataChnId}/176/144
 ```
+
