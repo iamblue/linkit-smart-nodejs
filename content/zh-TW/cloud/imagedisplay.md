@@ -4,6 +4,8 @@
 
 本篇 LinkIt smart 7688 , LinkIt smart 7688 Duo 皆可以適用.
 
+本章節教各位怎麼上傳圖片至 MCS.
+
 ## 準備事項
 
 * 先準備好一條 usb OTG 線
@@ -66,11 +68,19 @@ var myApp = mcs.register({
   deviceKey: 'Input your deviceKey',
 });
 
+child = exec('fswebcam -i 0 -d v4l2:/dev/video0 --no-banner -p YUYV --jpeg 95 --save /tmp/test.jpg', function (error, stdout, stderr) {
+    console.log('stdout: ' + stdout);
+    console.log('stderr: ' + stderr);
+    if (error !== null) {
+        console.log('exec error: ' + error);
+    }
+    fs.readFileAsync('/tmp/test.jpg')
+    .then(function(data) {
+        myApp.emit('album01','', new Buffer(data).toString('base64'));
+    });
+});
 
-myApp.on('gamepad', function(data) {
-  console.log(data)
-  if (data === 'a|0') {
-    child = exec('fswebcam -i 0 -d v4l2:/dev/video0 --no-banner -p YUYV --jpeg 95 --save /tmp/test.jpg',
+        child = exec('fswebcam -i 0 -d v4l2:/dev/video0 --no-banner -p YUYV --jpeg 95 --save /tmp/test.jpg',
       function (error, stdout, stderr) {
         console.log('stdout: ' + stdout);
         console.log('stderr: ' + stderr);
@@ -82,8 +92,7 @@ myApp.on('gamepad', function(data) {
            myApp.emit('album01','', new Buffer(data).toString('base64'));
         });
      });
-  }
-})
+
 ```
 
 * 返回你的 MCS 的 test device 那頁就可以看到成果囉!
