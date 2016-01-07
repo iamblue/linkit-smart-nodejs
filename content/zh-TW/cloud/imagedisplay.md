@@ -63,7 +63,6 @@ var Promise = require('bluebird');
 var fs = Promise.promisifyAll(require("fs"));
 
 var myApp = mcs.register({
-  host: 'api.mediatek.io',
   deviceId: 'Input your deviceId',
   deviceKey: 'Input your deviceKey',
 });
