@@ -49,6 +49,7 @@ fswebcam  -i 0 -d v4l2:/dev/video0  --no-banner  --jpeg 95  --save test.jpg
 ```
 vim app.js
 ```
+
 * 將這段 code copy 進去:
 
 ``` js
