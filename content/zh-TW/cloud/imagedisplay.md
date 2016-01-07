@@ -52,7 +52,35 @@ vim app.js
 * 將這段 code copy 進去:
 
 ``` js
+var mcs = require('mcsjs');
+var exec = require('child_process').exec;
+var Promise = require('bluebird');
+var fs = Promise.promisifyAll(require("fs"));
 
+var myApp = mcs.register({
+  host: 'api.mediatek.io',
+  deviceId: 'Input your deviceId',
+  deviceKey: 'Input your deviceKey',
+});
+
+
+myApp.on('gamepad', function(data) {
+  console.log(data)
+  if (data === 'a|0') {
+    child = exec('fswebcam -i 0 -d v4l2:/dev/video0 --no-banner -p YUYV --jpeg 95 --save /tmp/test.jpg',
+      function (error, stdout, stderr) {
+        console.log('stdout: ' + stdout);
+        console.log('stderr: ' + stderr);
+        if (error !== null) {
+          console.log('exec error: ' + error);
+        }
+        fs.readFileAsync('/tmp/test.jpg')
+        .then(function(data) {
+           myApp.emit('album01','', new Buffer(data).toString('base64'));
+        });
+     });
+  }
+})
 ```
 
 * 返回你的 MCS 的 test device 那頁就可以看到成果囉!
