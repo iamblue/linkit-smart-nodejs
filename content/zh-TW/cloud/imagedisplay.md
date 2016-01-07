@@ -37,7 +37,7 @@ opkg install fswebcam
 * 測試是否能拍一張照片:
 
 ```
-fswebcam  -i 0 -d v4l2:/dev/video0  --no-banner  --jpeg 95  --save test.jpg
+fswebcam -i 0 -d v4l2:/dev/video0 --no-banner -p YUYV --jpeg 95 --save /tmp/test.jpg
 ```
 之後你就會看到你的根目錄下面有一個 test.jpg 的檔案。
 
