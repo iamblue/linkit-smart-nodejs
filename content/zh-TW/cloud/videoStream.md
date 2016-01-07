@@ -28,7 +28,6 @@
 
 * ssh 進去您的 7688:
 * 安裝 ffmpeg:
-
 ```
 opkg update
 opkg install ffmpeg
