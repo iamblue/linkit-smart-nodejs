@@ -171,6 +171,7 @@ echo "Complete"
 
 ### 疑難排解
 - 如果出現 Network is down ，就是表示你的 hci0 沒有啟動，再啟動一下就好了。
+
 ![](hci_error.png)
 
 ### 參考資料 (Reference)
