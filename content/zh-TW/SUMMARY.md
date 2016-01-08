@@ -28,4 +28,4 @@
 * [教育](edu/README.md)
 * [Web of things](wot/README.md)
 * [經典範例](example/README.md)
-   * [使用 touch sensor 觸發 LED](example/touch_sensor.md)
+   * [使用藍芽](example/bluez_ble.md)
