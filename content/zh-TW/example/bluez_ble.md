@@ -6,11 +6,13 @@
 ### 環境準備
 - 插上你的7688，並設定好網路
 - 檢查 opkg 的更新
+
 ``` 
 opkg update
 ```
 
 - 安裝 bluez 所需的 packages，在此我裝了下述的東西
+
 ``` 
 opkg install kmod-bluetooth bluez-libs bluez-utils kmod-usb-core kmod-usb-uhci kmod-usb2 usbutils
 ```
