@@ -22,17 +22,17 @@ opkg install kmod-bluetooth bluez-libs bluez-utils kmod-usb-core kmod-usb-uhci k
 - 再檢查，需要裝什麼其他套件，我們換個作法來裝裝看，利用 openwrt 的 admin界面來找 package。
 你可以在登入 7688 時，發現在右上角有一個進入 openwrt 的管理界面處，進入之後會看到左上角會有：
 System > Software 點了該標簽後，即可顯示你所安裝的所有套件，並且還可以用來安裝套件喔。
-![](openwrt_admin.png)
+![](openwrt_admin.png) Figure 3.
 
-![](opkg_install4.png)
+![](opkg_install4.png) Figure 4.
 
 	- 我們檢查了幾個套件 bluez 相關的都安裝了嗎？
 
-![](check_bluez.png)
+![](check_bluez.png) Figure 5.
 
 	- dbus 也安裝了嗎? (呼應另一個教學文) 
 
-![](check_dbus.png)
+![](check_dbus.png) Figure 6.
 
 在安裝了這些套件之後，終於開始要 ssh 到7688上去試試看了。
 
@@ -61,12 +61,12 @@ lsusb
 ```
 
 可以查看，是否有任何 USB device 被偵測到。在此，我們的例子成功的看到了下述畫面： 
-![](lsusb_result.png)
+![](lsusb_result.png) Figure 7.
 
 我們可以看到，第 2 行顯示他抓到了一個我安裝上去的 devices，一看名字就知道是個 bluetooth 的東西。（為什麼？不要問，很可怕的）
 
 另外，你也可以透過 hciconfig 看看是否得到 hci0 的結果。
-![](hciconfig.png)
+![](hciconfig.png) Figure 8.
 
  
 ### Bluetooth 測試 1
@@ -93,13 +93,13 @@ sudo hcitool -i hci0 cmd 0x08 0x0008 1E 02 01 1A 1A FF 4C 00 02 15 $UUID $MAJOR 
 ```
 
 這一串設定數值，有點長，然後有點不想去一個一個說明，你可以再去查原始的其他 blog。基本上，最重要的 hitool up 指令千萬別忘了
-![](hitool_up.png)
+![](hitool_up.png) Figure 9.
 
 接著在 App 中重新 scan 附近的 bluetooth 裝置。看到我們找到了一個叫 BlueZ 5.30 的裝置， 就是成功的找到了。
-![](bluez_result1.png)
+![](bluez_result1.png) Figure 10.
 
 點進去，還真的可以看到東西耶，雖然設定不多。但這幾天的辛苦，就值得了。
-![](bluez_result2.png)
+![](bluez_result2.png) Figure 11.
 
 ### Bluetooth 測試 2
 在這個測試中，我們會先任意打開另一個 BLE 裝置，作為所以我取了一個叫 JAY－BLE 的裝置，作為測試的目標。
@@ -171,10 +171,16 @@ echo "Complete"
 
 ### 參考資料 (Reference)
 [1] https://wiki.openwrt.org/doc/howto/usb.bluetooth
+
 [2] http://cheng-min-i-taiwan.blogspot.tw/2015/03/raspberry-pi-40ibeacon.html
+
 [3] http://developer.radiusnetworks.com/pibeacon/pibeacon-instructions.html
+
 [4] https://github.com/RadiusNetworks?page=3
+
 [5] https://learn.adafruit.com/downloads/pdf/pibeacon-ibeacon-with-a-raspberry-pi.pdf
+
 [6] http://blog.cavedu.com/programming-language/appinventor/appinventorandarduinowithbluetooth3/
+
 [7] https://learn.adafruit.com/pibeacon-ibeacon-with-a-raspberry-pi/overview
 
