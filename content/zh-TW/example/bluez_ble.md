@@ -44,15 +44,16 @@ System > Software 點了該標簽後，即可顯示你所安裝的所有套件�
 
 ```
 /etc/init.d/dbus enable
-/etc/init.d/bluez-utils enable
+/etc/init.d/bluetoothd enable
 ```
 
 - 直接現在就啟動它們
 
 ```
 /etc/init.d/dbus start
-/etc/init.d/bluez-utils start
+/etc/init.d/bluetoothd start
 ```
+在 7688 裡，我沒有找到 bluez-utils 但是有另一個 bluetoothd 所以我把這個啟動，會用到 dbus 的樣子。
 
 ### 測試環境
 在 7688 上我們有一個 USB，如果你是大頭轉成小的頭，記得要用 OTG 的。我用普通的沒有成功，但是如果你有買7688的擴充版，那個上頭大的 USB 是可以直接插入 USB devides 就可以使用的。我們檢查可以下這個指令：
