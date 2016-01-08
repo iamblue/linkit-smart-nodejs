@@ -25,6 +25,7 @@ opkg install kmod-bluetooth bluez-libs bluez-utils kmod-usb-core kmod-usb-uhci k
 - 再檢查，需要裝什麼其他套件，我們換個作法來裝裝看，利用 openwrt 的 admin界面來找 package。
 你可以在登入 7688 時，發現在右上角有一個進入 openwrt 的管理界面處，進入之後會看到左上角會有：
 System > Software 點了該標簽後，即可顯示你所安裝的所有套件，並且還可以用來安裝套件喔。
+
 ![](openwrt_admin.png)
 
 ![](opkg_install4.png)
