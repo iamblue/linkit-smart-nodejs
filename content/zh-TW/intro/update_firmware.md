@@ -9,11 +9,15 @@
 * 檔案上傳完成後，靜置約 2~3 min。
 * 之後你會在電腦搜尋到 `LinkIt_Smart_7688_XXXXX` 這個 wifi 即表示 firmware 更新成功。
 
-[請參照這段影片](https://www.youtube.com/watch?v=U0XGlR8ZirU)
+請參照這段影片:
+
+{% youtube %}https://www.youtube.com/watch?v=U0XGlR8ZirU {% endyoutube %}
 
 ### 透過 microUSB + 隨身碟
 
-[請參照這段影片](https://www.youtube.com/watch?v=YZ1Zkg7vBqQ)
+請參照這段影片:
+
+{% youtube %}https://www.youtube.com/watch?v=YZ1Zkg7vBqQ {% endyoutube %}
 
 
  

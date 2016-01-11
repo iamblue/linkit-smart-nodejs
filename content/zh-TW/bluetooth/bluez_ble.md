@@ -1,15 +1,18 @@
 ## 使用 BlueZ 在7688上 Scan BLE 功能與基本常識 (v0.1)
+
 早期在2013年，我們便開始使用 radius network 作的 pibeacon 去作一些有趣的應用，例如：對室內的使用者作移動情境的數據分析。這一次 7688 的出現，著實是看到一個又簡單有有趣適合給軟體工程師也能做軟體與硬體整合的機會，透過了類似在 linux 的環境指令，就能達到很多事。這比起，許多模組要自己動手去重新設計，重新去作出硬體模組。這在時間上會增加許多，也節省了製作原型 (prototype) 的時間與進入門檻。
 這次，便目標將原本 Respberry P1 上能做的事，也能在 7688 上被完成。以便我們能專注在分析室內位置的資料分析應用，不用再去煩惱硬體很難設計，硬體很難做等惱人的問題。第 1 步，當然是先把 bluez 搞定，讓我們的藍芽模組可以正常工作。其他的就... 再說啦。
 
 ### 環境準備
 - 插上你的7688，並設定好網路
 - 檢查 opkg 的更新
+
 ``` 
 opkg update
 ```
 
 - 安裝 bluez 所需的 packages，在此我裝了下述的東西
+
 ``` 
 opkg install kmod-bluetooth bluez-libs bluez-utils kmod-usb-core kmod-usb-uhci kmod-usb2 usbutils
 ```
@@ -22,7 +25,12 @@ opkg install kmod-bluetooth bluez-libs bluez-utils kmod-usb-core kmod-usb-uhci k
 - 再檢查，需要裝什麼其他套件，我們換個作法來裝裝看，利用 openwrt 的 admin界面來找 package。
 你可以在登入 7688 時，發現在右上角有一個進入 openwrt 的管理界面處，進入之後會看到左上角會有：
 System > Software 點了該標簽後，即可顯示你所安裝的所有套件，並且還可以用來安裝套件喔。
+<<<<<<< HEAD:content/zh-TW/example/bluez_ble.md
 ![](openwrt_admin.png) Figure 3.
+=======
+
+![](openwrt_admin.png)
+>>>>>>> iamblue/master:content/zh-TW/bluetooth/bluez_ble.md
 
 ![](opkg_install4.png) Figure 4.
 
@@ -168,6 +176,7 @@ echo "Complete"
 
 ### 疑難排解
 - 如果出現 Network is down ，就是表示你的 hci0 沒有啟動，再啟動一下就好了。
+
 ![](hci_error.png)
 
 ### 參考資料 (Reference)
