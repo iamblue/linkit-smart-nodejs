@@ -31,7 +31,7 @@ exit 0
 * After file saved, setup `/etc/rc.local` permissions:
 
 ```
-chown 777 /etc/rc.local
+chmod 777 /etc/rc.local
 
 ```
 * Reboot and you will see the results! Bravo!
