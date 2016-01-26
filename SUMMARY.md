@@ -16,7 +16,7 @@
    * [Controlling LED with firmdata](en/basic/firmata.md)
    * [Controlling LED with cylon.js](en/basic/cylon.md)
    * [How to make your Node.js app start automatically on LinkIt Smart 7688 booting?](en/basic/linux_auto_start.md)
-* [Cloud Service (MCS)](content/en/cloud/README.md)
+* [Cloud Service (MCS)](en/cloud/README.md)
    * [Let MCS control LinkIt smart 7688 by using MCSjs](en/cloud/MCSjs.md)
    * [Use MCS + firmata to control LED](en/cloud/mcs_firmata.md)
    * [Uploading data point to MCS](zh-TW/cloud/uploadHeartRate.md)
