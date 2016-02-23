@@ -1,2 +1,2 @@
-* [English](content/en/)
+* [English](en/)
 * [繁體中文](content/zh-TW/)
