@@ -32,8 +32,52 @@ opkg update
 opkg install ffmpeg
 ```
 
-* 輸入以下指令: (`deviceId`, `deviceKey`, `dataChnId` 即為上述拿到的代號)
+* 首先，先來測試 video stream 是否成功，請輸入以下指令: (`deviceId`, `deviceKey`, `dataChnId` 即為上述拿到的代號)
+
 ```
 ffmpeg -s 176x144 -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream-mcs.mediatek.com/{deviceId}/{deviceKey}/{dataChnId}/176/144
 ```
 
+若在 MCS 上看到畫面代表正常~
+
+* 新增 app folder
+
+``` bash
+mkdir app && cd app
+```
+
+* 安裝對應套件:
+
+```bash
+npm install bluebird --save
+```
+
+* 產生 `app.js` file:
+
+``` js
+var mcs = require('mcsjs');
+var exec = require('child_process').exec;
+var Promise = require('bluebird');
+var fs = Promise.promisifyAll(require('fs'));
+var deviceId = 'Input your deviceId';
+var deviceKey = 'Input your deviceKey';
+var dataChnId = 'Input your `video stream` data channel Id';
+var width = 176;
+var height = 144;
+
+var myApp = mcs.register({
+  deviceId: deviceId,
+  deviceKey: deviceKey,
+});
+
+exec('ffmpeg -s ' + width + 'x' + height + ' -f video4linux2 -r 30 -i /dev/video0 -f mpeg1video -r 30 -b 800k http://stream-mcs.mediatek.com/' + deviceId + '/' +deviceKey + '/' + dataChnId + '/' + width + '/' + height, function(error, stdout, stderr) {
+  console.log('stdout: ' + stdout);
+  console.log('stderr: ' + stderr);
+  if (error !== null) {
+    console.log('exec error: ' + error);
+  }
+});
+```
+記得把上面取的的 deviceId, deviceKey 給貼上程式內需要輸入的地方。
+
+* 完成!
