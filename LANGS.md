@@ -1,1 +1,1 @@
-* [繁體中文](./content/zh-TW/)
+* [繁體中文](./content/content/zh-TW/)
