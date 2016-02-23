@@ -1,6 +1,5 @@
-#使用 MCS 來看視訊串流 (草稿)
+#使用 MCS 來看視訊串流
 
-(本章節功能還尚未 release)
 
 本篇 LinkIt smart 7688 , LinkIt smart 7688 Duo 皆可以適用.
 
