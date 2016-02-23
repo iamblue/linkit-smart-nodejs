@@ -1,1 +1,1 @@
-* [繁體中文](content/zh-TW/)
+* [English](content/en/)
