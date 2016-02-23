@@ -81,3 +81,8 @@ exec('ffmpeg -s ' + width + 'x' + height + ' -f video4linux2 -r 30 -i /dev/video
 記得把上面取的的 deviceId, deviceKey 給貼上程式內需要輸入的地方。
 
 * 完成!
+
+### 實際範例演練
+
+台灣有一位 maker ( 小棟 ) 做了居家監控娃娃的範例([點此案我](https://makerpro_taiwan.gitbooks.io/diy-linklt-smart-7688duo-monitor-doll/content/))，現在我們來用 video stream 將居家監控娃娃賦予它影片串流的功能吧!
+
