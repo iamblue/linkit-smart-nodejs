@@ -83,4 +83,4 @@ child = exec('fswebcam -i 0 -d v4l2:/dev/video0 --no-banner -p YUYV --jpeg 95 --
 
 * 返回你的 MCS 的 test device 那頁就可以看到成果囉!
 
-以上是告訴各位怎麼拍一張照片上傳至MCS，之後各位可以搭配其他 MCS channel 或 trigger 去完成一些 use case，例如每幾分鐘定時拍攝, 設定 trigger 達成一定目標值自動拍攝等等各種應用情境。ㄌ  
+以上是告訴各位怎麼拍一張照片上傳至MCS，之後各位可以搭配其他 MCS channel 或 trigger 去完成一些 use case，例如每幾分鐘定時拍攝, 設定 trigger 達成一定目標值自動拍攝等等各種應用情境。
