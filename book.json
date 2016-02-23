@@ -1,0 +1,9 @@
+{
+    "plugins": [
+        "youtube",
+        "splitter",
+        "toggle-chapters",
+        "anchors"
+    ],
+    "pluginsConfig": {}
+}
