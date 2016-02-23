@@ -46,6 +46,16 @@ fswebcam -i 0 -d v4l2:/dev/video0 --no-banner -p YUYV --jpeg 95 --save /tmp/test
 
 因為LinkIt smart 7688 的 flash 有讀寫的壽命，若太頻繁的在 flash 上做寫入動作容易降低 flash 壽命，因此建議存放在 memory 之中， /tmp folder 下即是使用 memory 空間，但記得每次一斷電存放在 flash 的空間就會自動被reset 回原值。
 
+* 產生一個專案
+ 
+``` bash
+mkdir app && cd app
+```
+* 安裝對應套件 
+
+``` bash
+npm install bluebird --save
+```
 * 編輯 app.js
 
 ```
@@ -78,6 +88,7 @@ child = exec('fswebcam -i 0 -d v4l2:/dev/video0 --no-banner -p YUYV --jpeg 95 --
 });
 
 ```
+把上述取得的 deviceId 跟 deviceKey 貼上對應位置就可以以囉!
 
 * 返回你的 MCS 的 test device 那頁就可以看到成果囉!
 
