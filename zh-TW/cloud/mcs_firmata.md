@@ -38,6 +38,7 @@ var board = new firmata.Board("/dev/ttyS0", function(err) {
   var myApp = mcs.register({
     deviceId: 'Input your deviceId',
     deviceKey: 'Input your deviceKey',
+    //host: 'api.mediatek.cn', // 如果是中國 site 的人記得加這行.
   });
   myApp.on('LED_control', function(data, time) {
     console.log('blink');
