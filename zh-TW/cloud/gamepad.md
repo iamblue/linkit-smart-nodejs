@@ -59,6 +59,7 @@ L298N 跟的四根 pin 腳分別接上 Linkit smart 7688 Duo 的 D2,D3,D4,D5 。
         var myApp = mcs.register({
             deviceId: 'Input your deviceId',   // Input your deviceId.
             deviceKey: 'Input your deviceKey', // Input your deviceKey.
+            //host: 'api.mediatek.cn', // 如果是中國 site 的人記得加這行.
         });
 
         var SerialPort = require("serialport").SerialPort;
