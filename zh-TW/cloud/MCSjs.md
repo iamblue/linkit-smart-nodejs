@@ -30,6 +30,7 @@ var mcs = require('mcsjs');
 var myApp = mcs.register({
   deviceId: 'Input your deviceId',
   deviceKey: 'Input your deviceKey',
+  //host: 'api.mediatek.cn', // 如果是中國 site 的人記得加這行.
 });
 // 這邊輸入上述打的 deviceId 跟 deviceKey
 
