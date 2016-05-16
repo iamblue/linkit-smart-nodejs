@@ -38,6 +38,7 @@ var fwName = 'fw.hex';
 var myApp = mcs.register({
   deviceId: 'Input your deviceID',
   deviceKey: 'Input your deviceKey',
+  //host: 'api.mediatek.cn', // 如果是中國 site 的人記得加這行.
 });
 
 var download = function(url, dest, cb) {
