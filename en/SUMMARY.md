@@ -24,6 +24,7 @@
    * [Make a remote tank with LinkIt smart 7688 Duo and MCS gamepad channel](cloud/gamepad.md)
 * [Emulator](emulator/README.md)
 * [Education](edu/README.md)
+* [Cross-build node.js modules/addons](crossbuild/crossbuild.md)
 * [Web of things](wot/README.md)
 * [Classic Examples](example/README.md)
    * [Use touch sensor to trigger LED](example/touch_sensor.md)
