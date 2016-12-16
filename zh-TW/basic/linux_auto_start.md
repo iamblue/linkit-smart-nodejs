@@ -31,7 +31,7 @@ exit 0
 * 存檔後，設定 `/etc/rc.local` 權限:
 
 ```
-chown 777 /etc/rc.local
+chmod 777 /etc/rc.local
 
 ```
 * 重新開機後就可以看到結果囉！
